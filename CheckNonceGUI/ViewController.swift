@@ -20,11 +20,7 @@ class ViewController: NSViewController {
         alert.addButton(withTitle: "OK")
         alert.runModal()
         view.window?.level = .floating
-        
-
-        // Do any additional setup after loading the view.
     }
-    
     
     @IBOutlet weak var filename_field: NSTextField!
     
@@ -59,7 +55,6 @@ class ViewController: NSViewController {
                 print("SHSH location is:", path)
                 var finalgenerator = getGenerator(shshPath: path)
                 apnonce_field.stringValue = finalgenerator
-                    
             }
             
         } else {
@@ -132,10 +127,9 @@ class ViewController: NSViewController {
         return finalGenerator
     }
 
-    
     @IBAction func setGenerator(_ sender: NSButton) {
         
-        print("Entering PWNDFU mode")
+        print("Entering recovery mode")
         let path = "/bin/sh"
         let arguments = ["/Applications/CheckNonceGUI.app/Contents/Resources/rec.sh"]
         sender.isEnabled = false
@@ -158,14 +152,13 @@ class ViewController: NSViewController {
         } else {
             print("Your generator is: \(finalgenerator)")
         }
-       
+        apnonce_field.stringValue = finalgenerator
         irecoveryStuff(argu: "-c \"setenv com.apple.System.boot-nonce \(finalgenerator)\"")
         alert.messageText = "iRecovery stuff pt2"
         alert.informativeText = "Set generator"
         alert.runModal()
         sleep(5)
         irecoveryStuff(argu: "-c saveenv")
-        
         
         alert.messageText = "iRecovery stuff pt2"
         alert.informativeText = "Saved environment"
@@ -192,10 +185,13 @@ class ViewController: NSViewController {
         alert.runModal()
     }
     
-    
-    
     @IBAction func enterPWNDFUMode(_ sender: NSButton) {
         
+        let alert = NSAlert.init()
+        alert.messageText = "IMPORTANT"
+        alert.informativeText = "Please make sure you are in DFU mode before pressing continue.\n\nipwndfu will loop until it puts the device in PWNDFU mode so just keep trying whenever the device reboots."
+        alert.addButton(withTitle: "Continue")
+        alert.runModal()
         
         print("Entering PWNDFU mode")
         let path = "/bin/sh"
@@ -204,21 +200,15 @@ class ViewController: NSViewController {
         let task = Process.launchedProcess(launchPath: path, arguments: arguments)
         task.waitUntilExit()
         sender.isEnabled = true
-        let alert = NSAlert.init()
         alert.messageText = "ipwndfu"
         alert.informativeText = "Device is now in PWNDFU mode."
-        alert.addButton(withTitle: "OK")
         alert.runModal()
         print("Entered PWNDFU mode")
     }
-    
     
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
-
-
-
 }
