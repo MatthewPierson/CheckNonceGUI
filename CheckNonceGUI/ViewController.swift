@@ -16,9 +16,10 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         let alert = NSAlert.init()
         alert.messageText = "Information"
-        alert.informativeText = "Don't be stupid =) Press OK to continue to the app\n\nAPP MUST BE INSTALLED TO /Applications !!! IF IT IS NOT INSTALLED THERE, CLOSE THE APP AND MOVE IT THERE"
+        alert.informativeText = "Press OK to continue to the app\n\nAPP MUST BE INSTALLED TO /Applications !!! IF IT IS NOT INSTALLED THERE, CLOSE THE APP AND MOVE IT THERE\n\nPlease try using your brain before you spam me on twitter/github/discord asking stupid questions."
         alert.addButton(withTitle: "OK")
         alert.runModal()
+        view.window?.level = .floating
         
         
 
@@ -31,7 +32,7 @@ class ViewController: NSViewController {
     
     @IBAction func helpButton(_ sender: NSButton) {
         let alert = NSAlert.init()
-        alert.messageText = "Version 0.0.5"
+        alert.messageText = "Version 0.0.6"
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
@@ -44,8 +45,8 @@ class ViewController: NSViewController {
         dialog.title                   = "Choose a .shsh or .shsh2 file";
         dialog.showsResizeIndicator    = true;
         dialog.showsHiddenFiles        = false;
-        dialog.canChooseDirectories    = true;
-        dialog.canCreateDirectories    = true;
+        dialog.canChooseDirectories    = false;
+        dialog.canCreateDirectories    = false;
         dialog.allowsMultipleSelection = false;
         dialog.allowedFileTypes        = ["shsh2", "shsh"];
 
@@ -60,7 +61,7 @@ class ViewController: NSViewController {
             }
             
         } else {
-            // User clicked on "Cancel"
+            print("Why'd you cancel me =(")
             return
         }
         
@@ -74,12 +75,10 @@ class ViewController: NSViewController {
         process.terminationHandler = { (process) in
            print("\ndidFinish: \(!process.isRunning)")
         print("did \(argu)")
-
         }
         do {
           try process.run()
         } catch {}
-        
     }
 
     
@@ -115,7 +114,6 @@ class ViewController: NSViewController {
                     
                 } else {
                     print("Invalid SHSH, no generator found")
-                    print("Some shit happned not sure what")
                     let alert = NSAlert.init()
                     alert.messageText = "Error"
                     alert.informativeText = "No generator found. Please pick an SHSH file with a generator."
@@ -124,7 +122,7 @@ class ViewController: NSViewController {
                     return
                 }
             } catch {
-                print("Some shit happned not sure what")
+                print("Couldn't find shsh")
                 let alert = NSAlert.init()
                 alert.messageText = "Error"
                 alert.informativeText = "No SHSH selected. Please locate your SHSH file and try again"
@@ -134,6 +132,11 @@ class ViewController: NSViewController {
             }
         } else {
             print("SHSH path not set properly. Please try again.")
+            let alert = NSAlert.init()
+            alert.messageText = "Error"
+            alert.informativeText = "Somehow you managed to select something that isn't a .shsh or .shsh2 file even though you shouldn't be able to. Please tell me how tf you did that"
+            alert.addButton(withTitle: "Go Back")
+            alert.runModal()
         }
         let resourceFileDictionary = NSDictionary(contentsOfFile: shshLocation)
         let s = resourceFileDictionary?.object(forKey: "generator")
