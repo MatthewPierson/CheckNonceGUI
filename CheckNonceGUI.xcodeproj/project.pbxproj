@@ -1,0 +1,1402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48F65A0B236D4480008BF2D7 /* alloc8.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6592B236D447F008BF2D7 /* alloc8.py */; };
+		48F65A0C236D4480008BF2D7 /* checkm8.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6592C236D447F008BF2D7 /* checkm8.pyc */; };
+		48F65A0E236D4480008BF2D7 /* checkm8.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6592F236D447F008BF2D7 /* checkm8.py */; };
+		48F65A0F236D4480008BF2D7 /* ipwnrecovery in Resources */ = {isa = PBXBuildFile; fileRef = 48F65930236D447F008BF2D7 /* ipwnrecovery */; };
+		48F65A10236D4480008BF2D7 /* recovery.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65931236D447F008BF2D7 /* recovery.py */; };
+		48F65A11236D4480008BF2D7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 48F65932236D447F008BF2D7 /* LICENSE */; };
+		48F65A12236D4480008BF2D7 /* recovery.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65933236D447F008BF2D7 /* recovery.pyc */; };
+		48F65A13236D4480008BF2D7 /* device_platform.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65934236D447F008BF2D7 /* device_platform.py */; };
+		48F65A14236D4480008BF2D7 /* steaks4uce-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F65936236D447F008BF2D7 /* steaks4uce-shellcode.bin */; };
+		48F65A15236D4480008BF2D7 /* alloc8-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F65937236D447F008BF2D7 /* alloc8-shellcode.bin */; };
+		48F65A16236D4480008BF2D7 /* t8015_shellcode_arm64.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F65938236D447F008BF2D7 /* t8015_shellcode_arm64.bin */; };
+		48F65A17236D4480008BF2D7 /* 0x8015.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F65939236D447F008BF2D7 /* 0x8015.bin */; };
+		48F65A18236D4480008BF2D7 /* SHAtter-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F6593A236D447F008BF2D7 /* SHAtter-shellcode.bin */; };
+		48F65A19236D4480008BF2D7 /* 24Kpwn-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F6593B236D447F008BF2D7 /* 24Kpwn-shellcode.bin */; };
+		48F65A1A236D4480008BF2D7 /* checkm8_arm64.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F6593C236D447F008BF2D7 /* checkm8_arm64.bin */; };
+		48F65A1B236D4480008BF2D7 /* ibss-flash-nor-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F6593D236D447F008BF2D7 /* ibss-flash-nor-shellcode.bin */; };
+		48F65A1C236D4480008BF2D7 /* usb_0xA1_2_armv7.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F6593E236D447F008BF2D7 /* usb_0xA1_2_armv7.bin */; };
+		48F65A1D236D4480008BF2D7 /* limera1n-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F6593F236D447F008BF2D7 /* limera1n-shellcode.bin */; };
+		48F65A1E236D4480008BF2D7 /* usb_0xA1_2_arm64.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F65940236D447F008BF2D7 /* usb_0xA1_2_arm64.bin */; };
+		48F65A1F236D4480008BF2D7 /* checkm8_armv7.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F65941236D447F008BF2D7 /* checkm8_armv7.bin */; };
+		48F65A20236D4480008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F65942236D447F008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin */; };
+		48F65A21236D4480008BF2D7 /* dfu.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65943236D447F008BF2D7 /* dfu.py */; };
+		48F65A22236D4480008BF2D7 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 48F65944236D447F008BF2D7 /* Makefile */; };
+		48F65A23236D4480008BF2D7 /* nor.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65945236D447F008BF2D7 /* nor.py */; };
+		48F65A24236D4480008BF2D7 /* device_platform.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65946236D447F008BF2D7 /* device_platform.pyc */; };
+		48F65A25236D4480008BF2D7 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65948236D447F008BF2D7 /* __init__.py */; };
+		48F65A26236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F6594A236D447F008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz */; };
+		48F65A27236D4480008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F6594B236D447F008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz */; };
+		48F65A28236D4480008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F6594C236D447F008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz */; };
+		48F65A29236D4480008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F6594D236D447F008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz */; };
+		48F65A2A236D4480008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F6594E236D447F008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz */; };
+		48F65A2B236D4480008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F6594F236D447F008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz */; };
+		48F65A2C236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F65950236D447F008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz */; };
+		48F65A2D236D4480008BF2D7 /* __init__.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65951236D447F008BF2D7 /* __init__.pyc */; };
+		48F65A2E236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F65952236D447F008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib */; };
+		48F65A2F236D4480008BF2D7 /* usbexec.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65953236D447F008BF2D7 /* usbexec.pyc */; };
+		48F65A30236D4480008BF2D7 /* ibootpatcher in Resources */ = {isa = PBXBuildFile; fileRef = 48F65954236D447F008BF2D7 /* ibootpatcher */; };
+		48F65A31236D4480008BF2D7 /* S5L8920-firmware in Resources */ = {isa = PBXBuildFile; fileRef = 48F65956236D447F008BF2D7 /* S5L8920-firmware */; };
+		48F65A32236D4480008BF2D7 /* JAILBREAK-GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 48F65957236D447F008BF2D7 /* JAILBREAK-GUIDE.md */; };
+		48F65A33236D4480008BF2D7 /* limera1n.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65958236D447F008BF2D7 /* limera1n.py */; };
+		48F65A34236D4480008BF2D7 /* image3_24Kpwn.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65959236D447F008BF2D7 /* image3_24Kpwn.py */; };
+		48F65A35236D4480008BF2D7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48F6595A236D447F008BF2D7 /* README.md */; };
+		48F65A36236D4480008BF2D7 /* _lookup.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6595C236D447F008BF2D7 /* _lookup.pyc */; };
+		48F65A37236D4480008BF2D7 /* legacy.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6595D236D447F008BF2D7 /* legacy.py */; };
+		48F65A38236D4480008BF2D7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 48F6595E236D447F008BF2D7 /* LICENSE */; };
+		48F65A39236D4480008BF2D7 /* _objfinalizer.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6595F236D447F008BF2D7 /* _objfinalizer.py */; };
+		48F65A3A236D4480008BF2D7 /* util.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65960236D447F008BF2D7 /* util.py */; };
+		48F65A3B236D4480008BF2D7 /* control.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65961236D447F008BF2D7 /* control.py */; };
+		48F65A3C236D4480008BF2D7 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65962236D447F008BF2D7 /* __init__.py */; };
+		48F65A3D236D4480008BF2D7 /* core.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65963236D447F008BF2D7 /* core.py */; };
+		48F65A3E236D4480008BF2D7 /* openusb.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65965236D447F008BF2D7 /* openusb.py */; };
+		48F65A3F236D4480008BF2D7 /* libusb1.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65966236D447F008BF2D7 /* libusb1.pyc */; };
+		48F65A40236D4480008BF2D7 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65967236D447F008BF2D7 /* __init__.py */; };
+		48F65A41236D4480008BF2D7 /* __init__.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65968236D447F008BF2D7 /* __init__.pyc */; };
+		48F65A42236D4480008BF2D7 /* libusb0.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65969236D447F008BF2D7 /* libusb0.py */; };
+		48F65A43236D4480008BF2D7 /* libusb1.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6596A236D447F008BF2D7 /* libusb1.py */; };
+		48F65A44236D4480008BF2D7 /* control.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6596B236D4480008BF2D7 /* control.pyc */; };
+		48F65A45236D4480008BF2D7 /* libloader.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6596C236D4480008BF2D7 /* libloader.pyc */; };
+		48F65A46236D4480008BF2D7 /* _interop.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6596D236D4480008BF2D7 /* _interop.py */; };
+		48F65A47236D4480008BF2D7 /* _interop.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6596E236D4480008BF2D7 /* _interop.pyc */; };
+		48F65A48236D4480008BF2D7 /* _lookup.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6596F236D4480008BF2D7 /* _lookup.py */; };
+		48F65A49236D4480008BF2D7 /* ACKNOWLEDGEMENTS in Resources */ = {isa = PBXBuildFile; fileRef = 48F65970236D4480008BF2D7 /* ACKNOWLEDGEMENTS */; };
+		48F65A4A236D4480008BF2D7 /* _debug.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65971236D4480008BF2D7 /* _debug.pyc */; };
+		48F65A4B236D4480008BF2D7 /* __init__.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65972236D4480008BF2D7 /* __init__.pyc */; };
+		48F65A4C236D4480008BF2D7 /* _debug.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65973236D4480008BF2D7 /* _debug.py */; };
+		48F65A4D236D4480008BF2D7 /* legacy.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65974236D4480008BF2D7 /* legacy.pyc */; };
+		48F65A4E236D4480008BF2D7 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 48F65975236D4480008BF2D7 /* README.rst */; };
+		48F65A4F236D4480008BF2D7 /* core.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65976236D4480008BF2D7 /* core.pyc */; };
+		48F65A50236D4480008BF2D7 /* libloader.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65977236D4480008BF2D7 /* libloader.py */; };
+		48F65A51236D4480008BF2D7 /* util.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65978236D4480008BF2D7 /* util.pyc */; };
+		48F65A52236D4480008BF2D7 /* _objfinalizer.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65979236D4480008BF2D7 /* _objfinalizer.pyc */; };
+		48F65A53236D4480008BF2D7 /* alloc8.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6597A236D4480008BF2D7 /* alloc8.pyc */; };
+		48F65A54236D4480008BF2D7 /* utilities.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6597B236D4480008BF2D7 /* utilities.pyc */; };
+		48F65A55236D4480008BF2D7 /* limera1n.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6597C236D4480008BF2D7 /* limera1n.pyc */; };
+		48F65A56236D4480008BF2D7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48F6597D236D4480008BF2D7 /* .gitignore */; };
+		48F65A57236D4480008BF2D7 /* image3_24Kpwn.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6597E236D4480008BF2D7 /* image3_24Kpwn.pyc */; };
+		48F65A58236D4480008BF2D7 /* steaks4uce.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6597F236D4480008BF2D7 /* steaks4uce.pyc */; };
+		48F65A59236D4480008BF2D7 /* dfuexec.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65980236D4480008BF2D7 /* dfuexec.py */; };
+		48F65A5A236D4480008BF2D7 /* dfu.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65981236D4480008BF2D7 /* dfu.pyc */; };
+		48F65A5B236D4480008BF2D7 /* dfuexec.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65982236D4480008BF2D7 /* dfuexec.pyc */; };
+		48F65A5C236D4480008BF2D7 /* image3.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65983236D4480008BF2D7 /* image3.pyc */; };
+		48F65A5D236D4480008BF2D7 /* image3.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65984236D4480008BF2D7 /* image3.py */; };
+		48F65A5E236D4480008BF2D7 /* utilities.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65985236D4480008BF2D7 /* utilities.py */; };
+		48F65A5F236D4480008BF2D7 /* SHAtter.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65986236D4480008BF2D7 /* SHAtter.py */; };
+		48F65A61236D4480008BF2D7 /* SHAtter.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F65989236D4480008BF2D7 /* SHAtter.pyc */; };
+		48F65A62236D4480008BF2D7 /* usbexec.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6598A236D4480008BF2D7 /* usbexec.py */; };
+		48F65A63236D4480008BF2D7 /* nor.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6598B236D4480008BF2D7 /* nor.pyc */; };
+		48F65A64236D4480008BF2D7 /* ipwndfu in Resources */ = {isa = PBXBuildFile; fileRef = 48F6598C236D4480008BF2D7 /* ipwndfu */; };
+		48F65A65236D4480008BF2D7 /* steaks4uce.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6598D236D4480008BF2D7 /* steaks4uce.py */; };
+		48F65A73236D4480008BF2D7 /* alloc8.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6599D236D4480008BF2D7 /* alloc8.py */; };
+		48F65A74236D4480008BF2D7 /* checkm8.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6599E236D4480008BF2D7 /* checkm8.pyc */; };
+		48F65A75236D4480008BF2D7 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A0236D4480008BF2D7 /* README */; };
+		48F65A76236D4480008BF2D7 /* checkm8.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A1236D4480008BF2D7 /* checkm8.py */; };
+		48F65A77236D4480008BF2D7 /* ipwnrecovery in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A2236D4480008BF2D7 /* ipwnrecovery */; };
+		48F65A78236D4480008BF2D7 /* recovery.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A3236D4480008BF2D7 /* recovery.py */; };
+		48F65A79236D4480008BF2D7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A4236D4480008BF2D7 /* LICENSE */; };
+		48F65A7A236D4480008BF2D7 /* recovery.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A5236D4480008BF2D7 /* recovery.pyc */; };
+		48F65A7B236D4480008BF2D7 /* device_platform.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A6236D4480008BF2D7 /* device_platform.py */; };
+		48F65A7C236D4480008BF2D7 /* steaks4uce-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A8236D4480008BF2D7 /* steaks4uce-shellcode.bin */; };
+		48F65A7D236D4480008BF2D7 /* alloc8-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659A9236D4480008BF2D7 /* alloc8-shellcode.bin */; };
+		48F65A7E236D4480008BF2D7 /* SHAtter-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659AA236D4480008BF2D7 /* SHAtter-shellcode.bin */; };
+		48F65A7F236D4480008BF2D7 /* 24Kpwn-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659AB236D4480008BF2D7 /* 24Kpwn-shellcode.bin */; };
+		48F65A80236D4480008BF2D7 /* checkm8_arm64.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659AC236D4480008BF2D7 /* checkm8_arm64.bin */; };
+		48F65A81236D4480008BF2D7 /* ibss-flash-nor-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659AD236D4480008BF2D7 /* ibss-flash-nor-shellcode.bin */; };
+		48F65A82236D4480008BF2D7 /* usb_0xA1_2_armv7.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659AE236D4480008BF2D7 /* usb_0xA1_2_armv7.bin */; };
+		48F65A83236D4480008BF2D7 /* limera1n-shellcode.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659AF236D4480008BF2D7 /* limera1n-shellcode.bin */; };
+		48F65A84236D4480008BF2D7 /* usb_0xA1_2_arm64.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659B0236D4480008BF2D7 /* usb_0xA1_2_arm64.bin */; };
+		48F65A85236D4480008BF2D7 /* checkm8_armv7.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659B1236D4480008BF2D7 /* checkm8_armv7.bin */; };
+		48F65A86236D4480008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin in Resources */ = {isa = PBXBuildFile; fileRef = 48F659B2236D4480008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin */; };
+		48F65A87236D4480008BF2D7 /* dfu.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659B3236D4480008BF2D7 /* dfu.py */; };
+		48F65A88236D4480008BF2D7 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 48F659B4236D4480008BF2D7 /* Makefile */; };
+		48F65A89236D4480008BF2D7 /* nor.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659B5236D4480008BF2D7 /* nor.py */; };
+		48F65A8A236D4480008BF2D7 /* device_platform.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659B6236D4480008BF2D7 /* device_platform.pyc */; };
+		48F65A8B236D4480008BF2D7 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659B8236D4480008BF2D7 /* __init__.py */; };
+		48F65A8C236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F659BA236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz */; };
+		48F65A8D236D4480008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F659BB236D4480008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz */; };
+		48F65A8E236D4480008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F659BC236D4480008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz */; };
+		48F65A8F236D4480008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F659BD236D4480008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz */; };
+		48F65A90236D4480008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F659BE236D4480008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz */; };
+		48F65A91236D4480008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F659BF236D4480008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz */; };
+		48F65A92236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C0236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz */; };
+		48F65A93236D4480008BF2D7 /* __init__.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C1236D4480008BF2D7 /* __init__.pyc */; };
+		48F65A94236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F659C2236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib */; };
+		48F65A95236D4480008BF2D7 /* usbexec.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C3236D4480008BF2D7 /* usbexec.pyc */; };
+		48F65A96236D4480008BF2D7 /* ibootpatcher in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C4236D4480008BF2D7 /* ibootpatcher */; };
+		48F65A97236D4480008BF2D7 /* S5L8920-firmware in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C6236D4480008BF2D7 /* S5L8920-firmware */; };
+		48F65A98236D4480008BF2D7 /* JAILBREAK-GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C7236D4480008BF2D7 /* JAILBREAK-GUIDE.md */; };
+		48F65A99236D4480008BF2D7 /* limera1n.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C8236D4480008BF2D7 /* limera1n.py */; };
+		48F65A9A236D4480008BF2D7 /* image3_24Kpwn.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659C9236D4480008BF2D7 /* image3_24Kpwn.py */; };
+		48F65A9B236D4480008BF2D7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48F659CA236D4480008BF2D7 /* README.md */; };
+		48F65A9C236D4480008BF2D7 /* _lookup.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659CC236D4480008BF2D7 /* _lookup.pyc */; };
+		48F65A9D236D4480008BF2D7 /* legacy.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659CD236D4480008BF2D7 /* legacy.py */; };
+		48F65A9E236D4480008BF2D7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 48F659CE236D4480008BF2D7 /* LICENSE */; };
+		48F65A9F236D4480008BF2D7 /* _objfinalizer.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659CF236D4480008BF2D7 /* _objfinalizer.py */; };
+		48F65AA0236D4480008BF2D7 /* util.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D0236D4480008BF2D7 /* util.py */; };
+		48F65AA1236D4480008BF2D7 /* control.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D1236D4480008BF2D7 /* control.py */; };
+		48F65AA2236D4480008BF2D7 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D2236D4480008BF2D7 /* __init__.py */; };
+		48F65AA3236D4480008BF2D7 /* core.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D3236D4480008BF2D7 /* core.py */; };
+		48F65AA4236D4480008BF2D7 /* openusb.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D5236D4480008BF2D7 /* openusb.py */; };
+		48F65AA5236D4480008BF2D7 /* libusb1.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D6236D4480008BF2D7 /* libusb1.pyc */; };
+		48F65AA6236D4480008BF2D7 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D7236D4480008BF2D7 /* __init__.py */; };
+		48F65AA7236D4480008BF2D7 /* __init__.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D8236D4480008BF2D7 /* __init__.pyc */; };
+		48F65AA8236D4480008BF2D7 /* libusb0.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659D9236D4480008BF2D7 /* libusb0.py */; };
+		48F65AA9236D4480008BF2D7 /* libusb1.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659DA236D4480008BF2D7 /* libusb1.py */; };
+		48F65AAA236D4480008BF2D7 /* control.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659DB236D4480008BF2D7 /* control.pyc */; };
+		48F65AAB236D4480008BF2D7 /* libloader.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659DC236D4480008BF2D7 /* libloader.pyc */; };
+		48F65AAC236D4480008BF2D7 /* _interop.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659DD236D4480008BF2D7 /* _interop.py */; };
+		48F65AAD236D4480008BF2D7 /* _interop.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659DE236D4480008BF2D7 /* _interop.pyc */; };
+		48F65AAE236D4480008BF2D7 /* _lookup.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659DF236D4480008BF2D7 /* _lookup.py */; };
+		48F65AAF236D4480008BF2D7 /* ACKNOWLEDGEMENTS in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E0236D4480008BF2D7 /* ACKNOWLEDGEMENTS */; };
+		48F65AB0236D4480008BF2D7 /* _debug.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E1236D4480008BF2D7 /* _debug.pyc */; };
+		48F65AB1236D4480008BF2D7 /* __init__.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E2236D4480008BF2D7 /* __init__.pyc */; };
+		48F65AB2236D4480008BF2D7 /* _debug.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E3236D4480008BF2D7 /* _debug.py */; };
+		48F65AB3236D4480008BF2D7 /* legacy.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E4236D4480008BF2D7 /* legacy.pyc */; };
+		48F65AB4236D4480008BF2D7 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E5236D4480008BF2D7 /* README.rst */; };
+		48F65AB5236D4480008BF2D7 /* core.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E6236D4480008BF2D7 /* core.pyc */; };
+		48F65AB6236D4480008BF2D7 /* libloader.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E7236D4480008BF2D7 /* libloader.py */; };
+		48F65AB7236D4480008BF2D7 /* util.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E8236D4480008BF2D7 /* util.pyc */; };
+		48F65AB8236D4480008BF2D7 /* _objfinalizer.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659E9236D4480008BF2D7 /* _objfinalizer.pyc */; };
+		48F65AB9236D4480008BF2D7 /* alloc8.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659EA236D4480008BF2D7 /* alloc8.pyc */; };
+		48F65ABA236D4480008BF2D7 /* utilities.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659EB236D4480008BF2D7 /* utilities.pyc */; };
+		48F65ABB236D4481008BF2D7 /* limera1n.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659EC236D4480008BF2D7 /* limera1n.pyc */; };
+		48F65ABC236D4481008BF2D7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48F659ED236D4480008BF2D7 /* .gitignore */; };
+		48F65ABD236D4481008BF2D7 /* image3_24Kpwn.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659EE236D4480008BF2D7 /* image3_24Kpwn.pyc */; };
+		48F65ABE236D4481008BF2D7 /* steaks4uce.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659EF236D4480008BF2D7 /* steaks4uce.pyc */; };
+		48F65ABF236D4481008BF2D7 /* dfuexec.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F0236D4480008BF2D7 /* dfuexec.py */; };
+		48F65AC0236D4481008BF2D7 /* dfu.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F1236D4480008BF2D7 /* dfu.pyc */; };
+		48F65AC1236D4481008BF2D7 /* dfuexec.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F2236D4480008BF2D7 /* dfuexec.pyc */; };
+		48F65AC2236D4481008BF2D7 /* image3.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F3236D4480008BF2D7 /* image3.pyc */; };
+		48F65AC3236D4481008BF2D7 /* image3.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F4236D4480008BF2D7 /* image3.py */; };
+		48F65AC4236D4481008BF2D7 /* utilities.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F5236D4480008BF2D7 /* utilities.py */; };
+		48F65AC5236D4481008BF2D7 /* SHAtter.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F6236D4480008BF2D7 /* SHAtter.py */; };
+		48F65AC7236D4481008BF2D7 /* SHAtter.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659F9236D4480008BF2D7 /* SHAtter.pyc */; };
+		48F65AC8236D4481008BF2D7 /* usbexec.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659FA236D4480008BF2D7 /* usbexec.py */; };
+		48F65AC9236D4481008BF2D7 /* nor.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F659FB236D4480008BF2D7 /* nor.pyc */; };
+		48F65ACA236D4481008BF2D7 /* ipwndfu in Resources */ = {isa = PBXBuildFile; fileRef = 48F659FC236D4480008BF2D7 /* ipwndfu */; };
+		48F65ACB236D4481008BF2D7 /* steaks4uce.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F659FD236D4480008BF2D7 /* steaks4uce.py */; };
+		48F65AD7236D4481008BF2D7 /* rmsigchks.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F65A0A236D4480008BF2D7 /* rmsigchks.py */; };
+		48F65ADC236D4928008BF2D7 /* ipwndfu in Resources */ = {isa = PBXBuildFile; fileRef = 48F65ADA236D4927008BF2D7 /* ipwndfu */; };
+		48F65ADD236D4928008BF2D7 /* ipwndfu_public in Resources */ = {isa = PBXBuildFile; fileRef = 48F65ADB236D4927008BF2D7 /* ipwndfu_public */; };
+		48FD0841236CD75500BFAFFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD0840236CD75500BFAFFE /* AppDelegate.swift */; };
+		48FD0843236CD75500BFAFFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD0842236CD75500BFAFFE /* ViewController.swift */; };
+		48FD0845236CD75700BFAFFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0844236CD75700BFAFFE /* Assets.xcassets */; };
+		48FD0848236CD75700BFAFFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0846236CD75700BFAFFE /* Main.storyboard */; };
+		48FD0B2F236CF1EA00BFAFFE /* ibss.iPad7,6.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A5B236CF1E900BFAFFE /* ibss.iPad7,6.img4 */; };
+		48FD0B30236CF1EA00BFAFFE /* igetnonce in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A5C236CF1E900BFAFFE /* igetnonce */; };
+		48FD0B31236CF1EA00BFAFFE /* ibec.iPad4,6.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A5D236CF1E900BFAFFE /* ibec.iPad4,6.img4 */; };
+		48FD0B32236CF1EA00BFAFFE /* ibss.iPhone9,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A5E236CF1E900BFAFFE /* ibss.iPhone9,2.img4 */; };
+		48FD0B33236CF1EA00BFAFFE /* ibss.iPad4,3.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A5F236CF1E900BFAFFE /* ibss.iPad4,3.img4 */; };
+		48FD0B34236CF1EA00BFAFFE /* ibss.iPhone10,6.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A60236CF1E900BFAFFE /* ibss.iPhone10,6.img4 */; };
+		48FD0B35236CF1EA00BFAFFE /* ibss.iPad7,12.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A61236CF1E900BFAFFE /* ibss.iPad7,12.img4 */; };
+		48FD0B36236CF1EA00BFAFFE /* ibss.iPad4,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A62236CF1E900BFAFFE /* ibss.iPad4,2.img4 */; };
+		48FD0B37236CF1EA00BFAFFE /* ibss.iPhone9,3.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A63236CF1E900BFAFFE /* ibss.iPhone9,3.img4 */; };
+		48FD0B38236CF1EA00BFAFFE /* ibec.iPad4,7.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A64236CF1E900BFAFFE /* ibec.iPad4,7.img4 */; };
+		48FD0B39236CF1EA00BFAFFE /* ibss.iPad4,9.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A65236CF1E900BFAFFE /* ibss.iPad4,9.img4 */; };
+		48FD0B3A236CF1EA00BFAFFE /* ibss.iPhone6,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A66236CF1E900BFAFFE /* ibss.iPhone6,1.img4 */; };
+		48FD0B3B236CF1EA00BFAFFE /* junk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A67236CF1E900BFAFFE /* junk.txt */; };
+		48FD0B3C236CF1EA00BFAFFE /* ibss.iPhone9,4.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A68236CF1E900BFAFFE /* ibss.iPhone9,4.img4 */; };
+		48FD0B3D236CF1EA00BFAFFE /* ibss.iPad4,5.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A69236CF1E900BFAFFE /* ibss.iPad4,5.img4 */; };
+		48FD0B3E236CF1EA00BFAFFE /* ibec.iPhone6,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6A236CF1E900BFAFFE /* ibec.iPhone6,1.img4 */; };
+		48FD0B3F236CF1EA00BFAFFE /* ibss.iPad4,4.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6B236CF1E900BFAFFE /* ibss.iPad4,4.img4 */; };
+		48FD0B40236CF1EA00BFAFFE /* ibec.iPad4,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6C236CF1E900BFAFFE /* ibec.iPad4,1.img4 */; };
+		48FD0B41236CF1EA00BFAFFE /* ibss.iPad4,8.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6D236CF1E900BFAFFE /* ibss.iPad4,8.img4 */; };
+		48FD0B42236CF1EA00BFAFFE /* ibss.iPhone10,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6E236CF1E900BFAFFE /* ibss.iPhone10,1.img4 */; };
+		48FD0B43236CF1EA00BFAFFE /* ibss.iPhone10,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6F236CF1E900BFAFFE /* ibss.iPhone10,2.img4 */; };
+		48FD0B44236CF1EA00BFAFFE /* irecovery in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A70236CF1E900BFAFFE /* irecovery */; };
+		48FD0B45236CF1EA00BFAFFE /* ibss.iPad4,7.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A71236CF1E900BFAFFE /* ibss.iPad4,7.img4 */; };
+		48FD0B46236CF1EA00BFAFFE /* ibec.iPad4,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A72236CF1E900BFAFFE /* ibec.iPad4,2.img4 */; };
+		48FD0B47236CF1EA00BFAFFE /* lsusb in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A73236CF1E900BFAFFE /* lsusb */; };
+		48FD0B48236CF1EA00BFAFFE /* ibss.iPod9,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A74236CF1E900BFAFFE /* ibss.iPod9,1.img4 */; };
+		48FD0B49236CF1EA00BFAFFE /* ibss.iPhone6,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A75236CF1E900BFAFFE /* ibss.iPhone6,2.img4 */; };
+		48FD0B4A236CF1EA00BFAFFE /* ibec.iPad4,3.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A76236CF1E900BFAFFE /* ibec.iPad4,3.img4 */; };
+		48FD0B4B236CF1EA00BFAFFE /* ibss.iPad4,6.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A77236CF1E900BFAFFE /* ibss.iPad4,6.img4 */; };
+		48FD0B4C236CF1EA00BFAFFE /* ibec.iPhone6,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A78236CF1E900BFAFFE /* ibec.iPhone6,2.img4 */; };
+		48FD0B4D236CF1EA00BFAFFE /* ibss.iPhone10,3.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A79236CF1E900BFAFFE /* ibss.iPhone10,3.img4 */; };
+		48FD0B4E236CF1EA00BFAFFE /* ibss.iPad7,11.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7A236CF1E900BFAFFE /* ibss.iPad7,11.img4 */; };
+		48FD0B4F236CF1EA00BFAFFE /* ibss.iPad4,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7B236CF1E900BFAFFE /* ibss.iPad4,1.img4 */; };
+		48FD0B50236CF1EA00BFAFFE /* ibec.iPad4,4.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7C236CF1E900BFAFFE /* ibec.iPad4,4.img4 */; };
+		48FD0B51236CF1EA00BFAFFE /* ibss.iPhone10,4.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7D236CF1E900BFAFFE /* ibss.iPhone10,4.img4 */; };
+		48FD0B52236CF1EA00BFAFFE /* ibec.iPad4,8.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7E236CF1E900BFAFFE /* ibec.iPad4,8.img4 */; };
+		48FD0B53236CF1EA00BFAFFE /* ibec.iPad4,9.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7F236CF1E900BFAFFE /* ibec.iPad4,9.img4 */; };
+		48FD0B54236CF1EA00BFAFFE /* ibss.iPhone10,5.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A80236CF1E900BFAFFE /* ibss.iPhone10,5.img4 */; };
+		48FD0B55236CF1EA00BFAFFE /* ibss.iPad7,5.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A81236CF1E900BFAFFE /* ibss.iPad7,5.img4 */; };
+		48FD0B56236CF1EA00BFAFFE /* ibec.iPad4,5.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A82236CF1E900BFAFFE /* ibec.iPad4,5.img4 */; };
+		48FD0B57236CF1EA00BFAFFE /* ibss.iPhone9,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */; };
+		48FD0B58236CF1EA00BFAFFE /* pwn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A84236CF1E900BFAFFE /* pwn.sh */; };
+		48FD0BEE236CF1EA00BFAFFE /* rec.sh in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0B2E236CF1EA00BFAFFE /* rec.sh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48F6592B236D447F008BF2D7 /* alloc8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = alloc8.py; sourceTree = "<group>"; };
+		48F6592C236D447F008BF2D7 /* checkm8.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = checkm8.pyc; sourceTree = "<group>"; };
+		48F6592F236D447F008BF2D7 /* checkm8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = checkm8.py; sourceTree = "<group>"; };
+		48F65930236D447F008BF2D7 /* ipwnrecovery */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ipwnrecovery; sourceTree = "<group>"; };
+		48F65931236D447F008BF2D7 /* recovery.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = recovery.py; sourceTree = "<group>"; };
+		48F65932236D447F008BF2D7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		48F65933236D447F008BF2D7 /* recovery.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = recovery.pyc; sourceTree = "<group>"; };
+		48F65934236D447F008BF2D7 /* device_platform.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = device_platform.py; sourceTree = "<group>"; };
+		48F65936236D447F008BF2D7 /* steaks4uce-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "steaks4uce-shellcode.bin"; sourceTree = "<group>"; };
+		48F65937236D447F008BF2D7 /* alloc8-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "alloc8-shellcode.bin"; sourceTree = "<group>"; };
+		48F65938236D447F008BF2D7 /* t8015_shellcode_arm64.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = t8015_shellcode_arm64.bin; sourceTree = "<group>"; };
+		48F65939236D447F008BF2D7 /* 0x8015.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = 0x8015.bin; sourceTree = "<group>"; };
+		48F6593A236D447F008BF2D7 /* SHAtter-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "SHAtter-shellcode.bin"; sourceTree = "<group>"; };
+		48F6593B236D447F008BF2D7 /* 24Kpwn-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "24Kpwn-shellcode.bin"; sourceTree = "<group>"; };
+		48F6593C236D447F008BF2D7 /* checkm8_arm64.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = checkm8_arm64.bin; sourceTree = "<group>"; };
+		48F6593D236D447F008BF2D7 /* ibss-flash-nor-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ibss-flash-nor-shellcode.bin"; sourceTree = "<group>"; };
+		48F6593E236D447F008BF2D7 /* usb_0xA1_2_armv7.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = usb_0xA1_2_armv7.bin; sourceTree = "<group>"; };
+		48F6593F236D447F008BF2D7 /* limera1n-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "limera1n-shellcode.bin"; sourceTree = "<group>"; };
+		48F65940236D447F008BF2D7 /* usb_0xA1_2_arm64.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = usb_0xA1_2_arm64.bin; sourceTree = "<group>"; };
+		48F65941236D447F008BF2D7 /* checkm8_armv7.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = checkm8_armv7.bin; sourceTree = "<group>"; };
+		48F65942236D447F008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = t8010_t8011_disable_wxn_arm64.bin; sourceTree = "<group>"; };
+		48F65943236D447F008BF2D7 /* dfu.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dfu.py; sourceTree = "<group>"; };
+		48F65944236D447F008BF2D7 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		48F65945236D447F008BF2D7 /* nor.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = nor.py; sourceTree = "<group>"; };
+		48F65946236D447F008BF2D7 /* device_platform.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = device_platform.pyc; sourceTree = "<group>"; };
+		48F65948236D447F008BF2D7 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		48F6594A236D447F008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.sierra.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F6594B236D447F008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.el_capitan.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F6594C236D447F008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.21.yosemite.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F6594D236D447F008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.20.mavericks.bottle.1.tar.gz"; sourceTree = "<group>"; };
+		48F6594E236D447F008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.19.mountain_lion.bottle.1.tar.gz"; sourceTree = "<group>"; };
+		48F6594F236D447F008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.high_sierra.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F65950236D447F008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.mojave.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F65951236D447F008BF2D7 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		48F65952236D447F008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.22.mojave.bottle.dylib"; sourceTree = "<group>"; };
+		48F65953236D447F008BF2D7 /* usbexec.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = usbexec.pyc; sourceTree = "<group>"; };
+		48F65954236D447F008BF2D7 /* ibootpatcher */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ibootpatcher; sourceTree = "<group>"; };
+		48F65956236D447F008BF2D7 /* S5L8920-firmware */ = {isa = PBXFileReference; lastKnownFileType = file; path = "S5L8920-firmware"; sourceTree = "<group>"; };
+		48F65957236D447F008BF2D7 /* JAILBREAK-GUIDE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "JAILBREAK-GUIDE.md"; sourceTree = "<group>"; };
+		48F65958236D447F008BF2D7 /* limera1n.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = limera1n.py; sourceTree = "<group>"; };
+		48F65959236D447F008BF2D7 /* image3_24Kpwn.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = image3_24Kpwn.py; sourceTree = "<group>"; };
+		48F6595A236D447F008BF2D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		48F6595C236D447F008BF2D7 /* _lookup.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _lookup.pyc; sourceTree = "<group>"; };
+		48F6595D236D447F008BF2D7 /* legacy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = legacy.py; sourceTree = "<group>"; };
+		48F6595E236D447F008BF2D7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		48F6595F236D447F008BF2D7 /* _objfinalizer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _objfinalizer.py; sourceTree = "<group>"; };
+		48F65960236D447F008BF2D7 /* util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		48F65961236D447F008BF2D7 /* control.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = control.py; sourceTree = "<group>"; };
+		48F65962236D447F008BF2D7 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		48F65963236D447F008BF2D7 /* core.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = core.py; sourceTree = "<group>"; };
+		48F65965236D447F008BF2D7 /* openusb.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = openusb.py; sourceTree = "<group>"; };
+		48F65966236D447F008BF2D7 /* libusb1.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = libusb1.pyc; sourceTree = "<group>"; };
+		48F65967236D447F008BF2D7 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		48F65968236D447F008BF2D7 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		48F65969236D447F008BF2D7 /* libusb0.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libusb0.py; sourceTree = "<group>"; };
+		48F6596A236D447F008BF2D7 /* libusb1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libusb1.py; sourceTree = "<group>"; };
+		48F6596B236D4480008BF2D7 /* control.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = control.pyc; sourceTree = "<group>"; };
+		48F6596C236D4480008BF2D7 /* libloader.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = libloader.pyc; sourceTree = "<group>"; };
+		48F6596D236D4480008BF2D7 /* _interop.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _interop.py; sourceTree = "<group>"; };
+		48F6596E236D4480008BF2D7 /* _interop.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _interop.pyc; sourceTree = "<group>"; };
+		48F6596F236D4480008BF2D7 /* _lookup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _lookup.py; sourceTree = "<group>"; };
+		48F65970236D4480008BF2D7 /* ACKNOWLEDGEMENTS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ACKNOWLEDGEMENTS; sourceTree = "<group>"; };
+		48F65971236D4480008BF2D7 /* _debug.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _debug.pyc; sourceTree = "<group>"; };
+		48F65972236D4480008BF2D7 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		48F65973236D4480008BF2D7 /* _debug.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _debug.py; sourceTree = "<group>"; };
+		48F65974236D4480008BF2D7 /* legacy.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = legacy.pyc; sourceTree = "<group>"; };
+		48F65975236D4480008BF2D7 /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
+		48F65976236D4480008BF2D7 /* core.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = core.pyc; sourceTree = "<group>"; };
+		48F65977236D4480008BF2D7 /* libloader.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libloader.py; sourceTree = "<group>"; };
+		48F65978236D4480008BF2D7 /* util.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = util.pyc; sourceTree = "<group>"; };
+		48F65979236D4480008BF2D7 /* _objfinalizer.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _objfinalizer.pyc; sourceTree = "<group>"; };
+		48F6597A236D4480008BF2D7 /* alloc8.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = alloc8.pyc; sourceTree = "<group>"; };
+		48F6597B236D4480008BF2D7 /* utilities.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = utilities.pyc; sourceTree = "<group>"; };
+		48F6597C236D4480008BF2D7 /* limera1n.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = limera1n.pyc; sourceTree = "<group>"; };
+		48F6597D236D4480008BF2D7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		48F6597E236D4480008BF2D7 /* image3_24Kpwn.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3_24Kpwn.pyc; sourceTree = "<group>"; };
+		48F6597F236D4480008BF2D7 /* steaks4uce.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = steaks4uce.pyc; sourceTree = "<group>"; };
+		48F65980236D4480008BF2D7 /* dfuexec.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dfuexec.py; sourceTree = "<group>"; };
+		48F65981236D4480008BF2D7 /* dfu.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = dfu.pyc; sourceTree = "<group>"; };
+		48F65982236D4480008BF2D7 /* dfuexec.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = dfuexec.pyc; sourceTree = "<group>"; };
+		48F65983236D4480008BF2D7 /* image3.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3.pyc; sourceTree = "<group>"; };
+		48F65984236D4480008BF2D7 /* image3.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = image3.py; sourceTree = "<group>"; };
+		48F65985236D4480008BF2D7 /* utilities.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utilities.py; sourceTree = "<group>"; };
+		48F65986236D4480008BF2D7 /* SHAtter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = SHAtter.py; sourceTree = "<group>"; };
+		48F65989236D4480008BF2D7 /* SHAtter.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SHAtter.pyc; sourceTree = "<group>"; };
+		48F6598A236D4480008BF2D7 /* usbexec.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = usbexec.py; sourceTree = "<group>"; };
+		48F6598B236D4480008BF2D7 /* nor.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = nor.pyc; sourceTree = "<group>"; };
+		48F6598C236D4480008BF2D7 /* ipwndfu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ipwndfu; sourceTree = "<group>"; };
+		48F6598D236D4480008BF2D7 /* steaks4uce.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = steaks4uce.py; sourceTree = "<group>"; };
+		48F6599D236D4480008BF2D7 /* alloc8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = alloc8.py; sourceTree = "<group>"; };
+		48F6599E236D4480008BF2D7 /* checkm8.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = checkm8.pyc; sourceTree = "<group>"; };
+		48F659A0236D4480008BF2D7 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		48F659A1236D4480008BF2D7 /* checkm8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = checkm8.py; sourceTree = "<group>"; };
+		48F659A2236D4480008BF2D7 /* ipwnrecovery */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ipwnrecovery; sourceTree = "<group>"; };
+		48F659A3236D4480008BF2D7 /* recovery.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = recovery.py; sourceTree = "<group>"; };
+		48F659A4236D4480008BF2D7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		48F659A5236D4480008BF2D7 /* recovery.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = recovery.pyc; sourceTree = "<group>"; };
+		48F659A6236D4480008BF2D7 /* device_platform.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = device_platform.py; sourceTree = "<group>"; };
+		48F659A8236D4480008BF2D7 /* steaks4uce-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "steaks4uce-shellcode.bin"; sourceTree = "<group>"; };
+		48F659A9236D4480008BF2D7 /* alloc8-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "alloc8-shellcode.bin"; sourceTree = "<group>"; };
+		48F659AA236D4480008BF2D7 /* SHAtter-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "SHAtter-shellcode.bin"; sourceTree = "<group>"; };
+		48F659AB236D4480008BF2D7 /* 24Kpwn-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "24Kpwn-shellcode.bin"; sourceTree = "<group>"; };
+		48F659AC236D4480008BF2D7 /* checkm8_arm64.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = checkm8_arm64.bin; sourceTree = "<group>"; };
+		48F659AD236D4480008BF2D7 /* ibss-flash-nor-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ibss-flash-nor-shellcode.bin"; sourceTree = "<group>"; };
+		48F659AE236D4480008BF2D7 /* usb_0xA1_2_armv7.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = usb_0xA1_2_armv7.bin; sourceTree = "<group>"; };
+		48F659AF236D4480008BF2D7 /* limera1n-shellcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "limera1n-shellcode.bin"; sourceTree = "<group>"; };
+		48F659B0236D4480008BF2D7 /* usb_0xA1_2_arm64.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = usb_0xA1_2_arm64.bin; sourceTree = "<group>"; };
+		48F659B1236D4480008BF2D7 /* checkm8_armv7.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = checkm8_armv7.bin; sourceTree = "<group>"; };
+		48F659B2236D4480008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = t8010_t8011_disable_wxn_arm64.bin; sourceTree = "<group>"; };
+		48F659B3236D4480008BF2D7 /* dfu.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dfu.py; sourceTree = "<group>"; };
+		48F659B4236D4480008BF2D7 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		48F659B5236D4480008BF2D7 /* nor.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = nor.py; sourceTree = "<group>"; };
+		48F659B6236D4480008BF2D7 /* device_platform.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = device_platform.pyc; sourceTree = "<group>"; };
+		48F659B8236D4480008BF2D7 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		48F659BA236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.sierra.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F659BB236D4480008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.el_capitan.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F659BC236D4480008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.21.yosemite.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F659BD236D4480008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.20.mavericks.bottle.1.tar.gz"; sourceTree = "<group>"; };
+		48F659BE236D4480008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.19.mountain_lion.bottle.1.tar.gz"; sourceTree = "<group>"; };
+		48F659BF236D4480008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.high_sierra.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F659C0236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "libusb-1.0.22.mojave.bottle.tar.gz"; sourceTree = "<group>"; };
+		48F659C1236D4480008BF2D7 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		48F659C2236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.22.mojave.bottle.dylib"; sourceTree = "<group>"; };
+		48F659C3236D4480008BF2D7 /* usbexec.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = usbexec.pyc; sourceTree = "<group>"; };
+		48F659C4236D4480008BF2D7 /* ibootpatcher */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ibootpatcher; sourceTree = "<group>"; };
+		48F659C6236D4480008BF2D7 /* S5L8920-firmware */ = {isa = PBXFileReference; lastKnownFileType = file; path = "S5L8920-firmware"; sourceTree = "<group>"; };
+		48F659C7236D4480008BF2D7 /* JAILBREAK-GUIDE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "JAILBREAK-GUIDE.md"; sourceTree = "<group>"; };
+		48F659C8236D4480008BF2D7 /* limera1n.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = limera1n.py; sourceTree = "<group>"; };
+		48F659C9236D4480008BF2D7 /* image3_24Kpwn.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = image3_24Kpwn.py; sourceTree = "<group>"; };
+		48F659CA236D4480008BF2D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		48F659CC236D4480008BF2D7 /* _lookup.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _lookup.pyc; sourceTree = "<group>"; };
+		48F659CD236D4480008BF2D7 /* legacy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = legacy.py; sourceTree = "<group>"; };
+		48F659CE236D4480008BF2D7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		48F659CF236D4480008BF2D7 /* _objfinalizer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _objfinalizer.py; sourceTree = "<group>"; };
+		48F659D0236D4480008BF2D7 /* util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		48F659D1236D4480008BF2D7 /* control.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = control.py; sourceTree = "<group>"; };
+		48F659D2236D4480008BF2D7 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		48F659D3236D4480008BF2D7 /* core.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = core.py; sourceTree = "<group>"; };
+		48F659D5236D4480008BF2D7 /* openusb.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = openusb.py; sourceTree = "<group>"; };
+		48F659D6236D4480008BF2D7 /* libusb1.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = libusb1.pyc; sourceTree = "<group>"; };
+		48F659D7236D4480008BF2D7 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		48F659D8236D4480008BF2D7 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		48F659D9236D4480008BF2D7 /* libusb0.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libusb0.py; sourceTree = "<group>"; };
+		48F659DA236D4480008BF2D7 /* libusb1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libusb1.py; sourceTree = "<group>"; };
+		48F659DB236D4480008BF2D7 /* control.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = control.pyc; sourceTree = "<group>"; };
+		48F659DC236D4480008BF2D7 /* libloader.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = libloader.pyc; sourceTree = "<group>"; };
+		48F659DD236D4480008BF2D7 /* _interop.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _interop.py; sourceTree = "<group>"; };
+		48F659DE236D4480008BF2D7 /* _interop.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _interop.pyc; sourceTree = "<group>"; };
+		48F659DF236D4480008BF2D7 /* _lookup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _lookup.py; sourceTree = "<group>"; };
+		48F659E0236D4480008BF2D7 /* ACKNOWLEDGEMENTS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ACKNOWLEDGEMENTS; sourceTree = "<group>"; };
+		48F659E1236D4480008BF2D7 /* _debug.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _debug.pyc; sourceTree = "<group>"; };
+		48F659E2236D4480008BF2D7 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		48F659E3236D4480008BF2D7 /* _debug.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _debug.py; sourceTree = "<group>"; };
+		48F659E4236D4480008BF2D7 /* legacy.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = legacy.pyc; sourceTree = "<group>"; };
+		48F659E5236D4480008BF2D7 /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
+		48F659E6236D4480008BF2D7 /* core.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = core.pyc; sourceTree = "<group>"; };
+		48F659E7236D4480008BF2D7 /* libloader.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libloader.py; sourceTree = "<group>"; };
+		48F659E8236D4480008BF2D7 /* util.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = util.pyc; sourceTree = "<group>"; };
+		48F659E9236D4480008BF2D7 /* _objfinalizer.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _objfinalizer.pyc; sourceTree = "<group>"; };
+		48F659EA236D4480008BF2D7 /* alloc8.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = alloc8.pyc; sourceTree = "<group>"; };
+		48F659EB236D4480008BF2D7 /* utilities.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = utilities.pyc; sourceTree = "<group>"; };
+		48F659EC236D4480008BF2D7 /* limera1n.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = limera1n.pyc; sourceTree = "<group>"; };
+		48F659ED236D4480008BF2D7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		48F659EE236D4480008BF2D7 /* image3_24Kpwn.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3_24Kpwn.pyc; sourceTree = "<group>"; };
+		48F659EF236D4480008BF2D7 /* steaks4uce.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = steaks4uce.pyc; sourceTree = "<group>"; };
+		48F659F0236D4480008BF2D7 /* dfuexec.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dfuexec.py; sourceTree = "<group>"; };
+		48F659F1236D4480008BF2D7 /* dfu.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = dfu.pyc; sourceTree = "<group>"; };
+		48F659F2236D4480008BF2D7 /* dfuexec.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = dfuexec.pyc; sourceTree = "<group>"; };
+		48F659F3236D4480008BF2D7 /* image3.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3.pyc; sourceTree = "<group>"; };
+		48F659F4236D4480008BF2D7 /* image3.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = image3.py; sourceTree = "<group>"; };
+		48F659F5236D4480008BF2D7 /* utilities.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utilities.py; sourceTree = "<group>"; };
+		48F659F6236D4480008BF2D7 /* SHAtter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = SHAtter.py; sourceTree = "<group>"; };
+		48F659F9236D4480008BF2D7 /* SHAtter.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SHAtter.pyc; sourceTree = "<group>"; };
+		48F659FA236D4480008BF2D7 /* usbexec.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = usbexec.py; sourceTree = "<group>"; };
+		48F659FB236D4480008BF2D7 /* nor.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = nor.pyc; sourceTree = "<group>"; };
+		48F659FC236D4480008BF2D7 /* ipwndfu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ipwndfu; sourceTree = "<group>"; };
+		48F659FD236D4480008BF2D7 /* steaks4uce.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = steaks4uce.py; sourceTree = "<group>"; };
+		48F65A0A236D4480008BF2D7 /* rmsigchks.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rmsigchks.py; sourceTree = "<group>"; };
+		48F65ADA236D4927008BF2D7 /* ipwndfu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ipwndfu; sourceTree = "<group>"; };
+		48F65ADB236D4927008BF2D7 /* ipwndfu_public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ipwndfu_public; sourceTree = "<group>"; };
+		48FD083D236CD75500BFAFFE /* CheckNonceGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckNonceGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48FD0840236CD75500BFAFFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48FD0842236CD75500BFAFFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48FD0844236CD75700BFAFFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48FD0847236CD75700BFAFFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48FD0849236CD75700BFAFFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FD084A236CD75700BFAFFE /* CheckNonceGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckNonceGUI.entitlements; sourceTree = "<group>"; };
+		48FD0A5B236CF1E900BFAFFE /* ibss.iPad7,6.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad7,6.img4"; sourceTree = "<group>"; };
+		48FD0A5C236CF1E900BFAFFE /* igetnonce */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = igetnonce; sourceTree = "<group>"; };
+		48FD0A5D236CF1E900BFAFFE /* ibec.iPad4,6.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,6.img4"; sourceTree = "<group>"; };
+		48FD0A5E236CF1E900BFAFFE /* ibss.iPhone9,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone9,2.img4"; sourceTree = "<group>"; };
+		48FD0A5F236CF1E900BFAFFE /* ibss.iPad4,3.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,3.img4"; sourceTree = "<group>"; };
+		48FD0A60236CF1E900BFAFFE /* ibss.iPhone10,6.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,6.img4"; sourceTree = "<group>"; };
+		48FD0A61236CF1E900BFAFFE /* ibss.iPad7,12.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad7,12.img4"; sourceTree = "<group>"; };
+		48FD0A62236CF1E900BFAFFE /* ibss.iPad4,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,2.img4"; sourceTree = "<group>"; };
+		48FD0A63236CF1E900BFAFFE /* ibss.iPhone9,3.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone9,3.img4"; sourceTree = "<group>"; };
+		48FD0A64236CF1E900BFAFFE /* ibec.iPad4,7.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,7.img4"; sourceTree = "<group>"; };
+		48FD0A65236CF1E900BFAFFE /* ibss.iPad4,9.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,9.img4"; sourceTree = "<group>"; };
+		48FD0A66236CF1E900BFAFFE /* ibss.iPhone6,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone6,1.img4"; sourceTree = "<group>"; };
+		48FD0A67236CF1E900BFAFFE /* junk.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = junk.txt; sourceTree = "<group>"; };
+		48FD0A68236CF1E900BFAFFE /* ibss.iPhone9,4.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone9,4.img4"; sourceTree = "<group>"; };
+		48FD0A69236CF1E900BFAFFE /* ibss.iPad4,5.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,5.img4"; sourceTree = "<group>"; };
+		48FD0A6A236CF1E900BFAFFE /* ibec.iPhone6,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPhone6,1.img4"; sourceTree = "<group>"; };
+		48FD0A6B236CF1E900BFAFFE /* ibss.iPad4,4.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,4.img4"; sourceTree = "<group>"; };
+		48FD0A6C236CF1E900BFAFFE /* ibec.iPad4,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,1.img4"; sourceTree = "<group>"; };
+		48FD0A6D236CF1E900BFAFFE /* ibss.iPad4,8.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,8.img4"; sourceTree = "<group>"; };
+		48FD0A6E236CF1E900BFAFFE /* ibss.iPhone10,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,1.img4"; sourceTree = "<group>"; };
+		48FD0A6F236CF1E900BFAFFE /* ibss.iPhone10,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,2.img4"; sourceTree = "<group>"; };
+		48FD0A70236CF1E900BFAFFE /* irecovery */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = irecovery; sourceTree = "<group>"; };
+		48FD0A71236CF1E900BFAFFE /* ibss.iPad4,7.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,7.img4"; sourceTree = "<group>"; };
+		48FD0A72236CF1E900BFAFFE /* ibec.iPad4,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,2.img4"; sourceTree = "<group>"; };
+		48FD0A73236CF1E900BFAFFE /* lsusb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lsusb; sourceTree = "<group>"; };
+		48FD0A74236CF1E900BFAFFE /* ibss.iPod9,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPod9,1.img4"; sourceTree = "<group>"; };
+		48FD0A75236CF1E900BFAFFE /* ibss.iPhone6,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone6,2.img4"; sourceTree = "<group>"; };
+		48FD0A76236CF1E900BFAFFE /* ibec.iPad4,3.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,3.img4"; sourceTree = "<group>"; };
+		48FD0A77236CF1E900BFAFFE /* ibss.iPad4,6.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,6.img4"; sourceTree = "<group>"; };
+		48FD0A78236CF1E900BFAFFE /* ibec.iPhone6,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPhone6,2.img4"; sourceTree = "<group>"; };
+		48FD0A79236CF1E900BFAFFE /* ibss.iPhone10,3.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,3.img4"; sourceTree = "<group>"; };
+		48FD0A7A236CF1E900BFAFFE /* ibss.iPad7,11.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad7,11.img4"; sourceTree = "<group>"; };
+		48FD0A7B236CF1E900BFAFFE /* ibss.iPad4,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,1.img4"; sourceTree = "<group>"; };
+		48FD0A7C236CF1E900BFAFFE /* ibec.iPad4,4.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,4.img4"; sourceTree = "<group>"; };
+		48FD0A7D236CF1E900BFAFFE /* ibss.iPhone10,4.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,4.img4"; sourceTree = "<group>"; };
+		48FD0A7E236CF1E900BFAFFE /* ibec.iPad4,8.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,8.img4"; sourceTree = "<group>"; };
+		48FD0A7F236CF1E900BFAFFE /* ibec.iPad4,9.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,9.img4"; sourceTree = "<group>"; };
+		48FD0A80236CF1E900BFAFFE /* ibss.iPhone10,5.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,5.img4"; sourceTree = "<group>"; };
+		48FD0A81236CF1E900BFAFFE /* ibss.iPad7,5.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad7,5.img4"; sourceTree = "<group>"; };
+		48FD0A82236CF1E900BFAFFE /* ibec.iPad4,5.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,5.img4"; sourceTree = "<group>"; };
+		48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone9,1.img4"; sourceTree = "<group>"; };
+		48FD0A84236CF1E900BFAFFE /* pwn.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = pwn.sh; sourceTree = "<group>"; };
+		48FD0B2E236CF1EA00BFAFFE /* rec.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = rec.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48FD083A236CD75500BFAFFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F65A94236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib in Frameworks */,
+				48F65A2E236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48F6592A236D447F008BF2D7 /* ipwndfu */ = {
+			isa = PBXGroup;
+			children = (
+				48F6592B236D447F008BF2D7 /* alloc8.py */,
+				48F6592C236D447F008BF2D7 /* checkm8.pyc */,
+				48F6592F236D447F008BF2D7 /* checkm8.py */,
+				48F65930236D447F008BF2D7 /* ipwnrecovery */,
+				48F65931236D447F008BF2D7 /* recovery.py */,
+				48F65932236D447F008BF2D7 /* LICENSE */,
+				48F65933236D447F008BF2D7 /* recovery.pyc */,
+				48F65934236D447F008BF2D7 /* device_platform.py */,
+				48F65935236D447F008BF2D7 /* bin */,
+				48F65943236D447F008BF2D7 /* dfu.py */,
+				48F65944236D447F008BF2D7 /* Makefile */,
+				48F65945236D447F008BF2D7 /* nor.py */,
+				48F65946236D447F008BF2D7 /* device_platform.pyc */,
+				48F65947236D447F008BF2D7 /* libusbfinder */,
+				48F65953236D447F008BF2D7 /* usbexec.pyc */,
+				48F65954236D447F008BF2D7 /* ibootpatcher */,
+				48F65955236D447F008BF2D7 /* aes-keys */,
+				48F65957236D447F008BF2D7 /* JAILBREAK-GUIDE.md */,
+				48F65958236D447F008BF2D7 /* limera1n.py */,
+				48F65959236D447F008BF2D7 /* image3_24Kpwn.py */,
+				48F6595A236D447F008BF2D7 /* README.md */,
+				48F6595B236D447F008BF2D7 /* usb */,
+				48F6597A236D4480008BF2D7 /* alloc8.pyc */,
+				48F6597B236D4480008BF2D7 /* utilities.pyc */,
+				48F6597C236D4480008BF2D7 /* limera1n.pyc */,
+				48F6597D236D4480008BF2D7 /* .gitignore */,
+				48F6597E236D4480008BF2D7 /* image3_24Kpwn.pyc */,
+				48F6597F236D4480008BF2D7 /* steaks4uce.pyc */,
+				48F65980236D4480008BF2D7 /* dfuexec.py */,
+				48F65981236D4480008BF2D7 /* dfu.pyc */,
+				48F65982236D4480008BF2D7 /* dfuexec.pyc */,
+				48F65983236D4480008BF2D7 /* image3.pyc */,
+				48F65984236D4480008BF2D7 /* image3.py */,
+				48F65985236D4480008BF2D7 /* utilities.py */,
+				48F65986236D4480008BF2D7 /* SHAtter.py */,
+				48F65989236D4480008BF2D7 /* SHAtter.pyc */,
+				48F6598A236D4480008BF2D7 /* usbexec.py */,
+				48F6598B236D4480008BF2D7 /* nor.pyc */,
+				48F6598C236D4480008BF2D7 /* ipwndfu */,
+				48F6598D236D4480008BF2D7 /* steaks4uce.py */,
+			);
+			path = ipwndfu;
+			sourceTree = "<group>";
+		};
+		48F65935236D447F008BF2D7 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				48F65936236D447F008BF2D7 /* steaks4uce-shellcode.bin */,
+				48F65937236D447F008BF2D7 /* alloc8-shellcode.bin */,
+				48F65938236D447F008BF2D7 /* t8015_shellcode_arm64.bin */,
+				48F65939236D447F008BF2D7 /* 0x8015.bin */,
+				48F6593A236D447F008BF2D7 /* SHAtter-shellcode.bin */,
+				48F6593B236D447F008BF2D7 /* 24Kpwn-shellcode.bin */,
+				48F6593C236D447F008BF2D7 /* checkm8_arm64.bin */,
+				48F6593D236D447F008BF2D7 /* ibss-flash-nor-shellcode.bin */,
+				48F6593E236D447F008BF2D7 /* usb_0xA1_2_armv7.bin */,
+				48F6593F236D447F008BF2D7 /* limera1n-shellcode.bin */,
+				48F65940236D447F008BF2D7 /* usb_0xA1_2_arm64.bin */,
+				48F65941236D447F008BF2D7 /* checkm8_armv7.bin */,
+				48F65942236D447F008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		48F65947236D447F008BF2D7 /* libusbfinder */ = {
+			isa = PBXGroup;
+			children = (
+				48F65948236D447F008BF2D7 /* __init__.py */,
+				48F65949236D447F008BF2D7 /* bottles */,
+				48F65951236D447F008BF2D7 /* __init__.pyc */,
+				48F65952236D447F008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib */,
+			);
+			path = libusbfinder;
+			sourceTree = "<group>";
+		};
+		48F65949236D447F008BF2D7 /* bottles */ = {
+			isa = PBXGroup;
+			children = (
+				48F6594A236D447F008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz */,
+				48F6594B236D447F008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz */,
+				48F6594C236D447F008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz */,
+				48F6594D236D447F008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz */,
+				48F6594E236D447F008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz */,
+				48F6594F236D447F008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz */,
+				48F65950236D447F008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz */,
+			);
+			path = bottles;
+			sourceTree = "<group>";
+		};
+		48F65955236D447F008BF2D7 /* aes-keys */ = {
+			isa = PBXGroup;
+			children = (
+				48F65956236D447F008BF2D7 /* S5L8920-firmware */,
+			);
+			path = "aes-keys";
+			sourceTree = "<group>";
+		};
+		48F6595B236D447F008BF2D7 /* usb */ = {
+			isa = PBXGroup;
+			children = (
+				48F6595C236D447F008BF2D7 /* _lookup.pyc */,
+				48F6595D236D447F008BF2D7 /* legacy.py */,
+				48F6595E236D447F008BF2D7 /* LICENSE */,
+				48F6595F236D447F008BF2D7 /* _objfinalizer.py */,
+				48F65960236D447F008BF2D7 /* util.py */,
+				48F65961236D447F008BF2D7 /* control.py */,
+				48F65962236D447F008BF2D7 /* __init__.py */,
+				48F65963236D447F008BF2D7 /* core.py */,
+				48F65964236D447F008BF2D7 /* backend */,
+				48F6596B236D4480008BF2D7 /* control.pyc */,
+				48F6596C236D4480008BF2D7 /* libloader.pyc */,
+				48F6596D236D4480008BF2D7 /* _interop.py */,
+				48F6596E236D4480008BF2D7 /* _interop.pyc */,
+				48F6596F236D4480008BF2D7 /* _lookup.py */,
+				48F65970236D4480008BF2D7 /* ACKNOWLEDGEMENTS */,
+				48F65971236D4480008BF2D7 /* _debug.pyc */,
+				48F65972236D4480008BF2D7 /* __init__.pyc */,
+				48F65973236D4480008BF2D7 /* _debug.py */,
+				48F65974236D4480008BF2D7 /* legacy.pyc */,
+				48F65975236D4480008BF2D7 /* README.rst */,
+				48F65976236D4480008BF2D7 /* core.pyc */,
+				48F65977236D4480008BF2D7 /* libloader.py */,
+				48F65978236D4480008BF2D7 /* util.pyc */,
+				48F65979236D4480008BF2D7 /* _objfinalizer.pyc */,
+			);
+			path = usb;
+			sourceTree = "<group>";
+		};
+		48F65964236D447F008BF2D7 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				48F65965236D447F008BF2D7 /* openusb.py */,
+				48F65966236D447F008BF2D7 /* libusb1.pyc */,
+				48F65967236D447F008BF2D7 /* __init__.py */,
+				48F65968236D447F008BF2D7 /* __init__.pyc */,
+				48F65969236D447F008BF2D7 /* libusb0.py */,
+				48F6596A236D447F008BF2D7 /* libusb1.py */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		48F6599C236D4480008BF2D7 /* ipwndfu_public */ = {
+			isa = PBXGroup;
+			children = (
+				48F6599D236D4480008BF2D7 /* alloc8.py */,
+				48F6599E236D4480008BF2D7 /* checkm8.pyc */,
+				48F6599F236D4480008BF2D7 /* nor-backups */,
+				48F659A1236D4480008BF2D7 /* checkm8.py */,
+				48F659A2236D4480008BF2D7 /* ipwnrecovery */,
+				48F659A3236D4480008BF2D7 /* recovery.py */,
+				48F659A4236D4480008BF2D7 /* LICENSE */,
+				48F659A5236D4480008BF2D7 /* recovery.pyc */,
+				48F659A6236D4480008BF2D7 /* device_platform.py */,
+				48F659A7236D4480008BF2D7 /* bin */,
+				48F659B3236D4480008BF2D7 /* dfu.py */,
+				48F659B4236D4480008BF2D7 /* Makefile */,
+				48F659B5236D4480008BF2D7 /* nor.py */,
+				48F659B6236D4480008BF2D7 /* device_platform.pyc */,
+				48F659B7236D4480008BF2D7 /* libusbfinder */,
+				48F659C3236D4480008BF2D7 /* usbexec.pyc */,
+				48F659C4236D4480008BF2D7 /* ibootpatcher */,
+				48F659C5236D4480008BF2D7 /* aes-keys */,
+				48F659C7236D4480008BF2D7 /* JAILBREAK-GUIDE.md */,
+				48F659C8236D4480008BF2D7 /* limera1n.py */,
+				48F659C9236D4480008BF2D7 /* image3_24Kpwn.py */,
+				48F659CA236D4480008BF2D7 /* README.md */,
+				48F659CB236D4480008BF2D7 /* usb */,
+				48F659EA236D4480008BF2D7 /* alloc8.pyc */,
+				48F659EB236D4480008BF2D7 /* utilities.pyc */,
+				48F659EC236D4480008BF2D7 /* limera1n.pyc */,
+				48F659ED236D4480008BF2D7 /* .gitignore */,
+				48F659EE236D4480008BF2D7 /* image3_24Kpwn.pyc */,
+				48F659EF236D4480008BF2D7 /* steaks4uce.pyc */,
+				48F659F0236D4480008BF2D7 /* dfuexec.py */,
+				48F659F1236D4480008BF2D7 /* dfu.pyc */,
+				48F659F2236D4480008BF2D7 /* dfuexec.pyc */,
+				48F659F3236D4480008BF2D7 /* image3.pyc */,
+				48F659F4236D4480008BF2D7 /* image3.py */,
+				48F659F5236D4480008BF2D7 /* utilities.py */,
+				48F659F6236D4480008BF2D7 /* SHAtter.py */,
+				48F659F9236D4480008BF2D7 /* SHAtter.pyc */,
+				48F659FA236D4480008BF2D7 /* usbexec.py */,
+				48F659FB236D4480008BF2D7 /* nor.pyc */,
+				48F659FC236D4480008BF2D7 /* ipwndfu */,
+				48F659FD236D4480008BF2D7 /* steaks4uce.py */,
+				48F65A0A236D4480008BF2D7 /* rmsigchks.py */,
+			);
+			path = ipwndfu_public;
+			sourceTree = "<group>";
+		};
+		48F6599F236D4480008BF2D7 /* nor-backups */ = {
+			isa = PBXGroup;
+			children = (
+				48F659A0236D4480008BF2D7 /* README */,
+			);
+			path = "nor-backups";
+			sourceTree = "<group>";
+		};
+		48F659A7236D4480008BF2D7 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				48F659A8236D4480008BF2D7 /* steaks4uce-shellcode.bin */,
+				48F659A9236D4480008BF2D7 /* alloc8-shellcode.bin */,
+				48F659AA236D4480008BF2D7 /* SHAtter-shellcode.bin */,
+				48F659AB236D4480008BF2D7 /* 24Kpwn-shellcode.bin */,
+				48F659AC236D4480008BF2D7 /* checkm8_arm64.bin */,
+				48F659AD236D4480008BF2D7 /* ibss-flash-nor-shellcode.bin */,
+				48F659AE236D4480008BF2D7 /* usb_0xA1_2_armv7.bin */,
+				48F659AF236D4480008BF2D7 /* limera1n-shellcode.bin */,
+				48F659B0236D4480008BF2D7 /* usb_0xA1_2_arm64.bin */,
+				48F659B1236D4480008BF2D7 /* checkm8_armv7.bin */,
+				48F659B2236D4480008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		48F659B7236D4480008BF2D7 /* libusbfinder */ = {
+			isa = PBXGroup;
+			children = (
+				48F659B8236D4480008BF2D7 /* __init__.py */,
+				48F659B9236D4480008BF2D7 /* bottles */,
+				48F659C1236D4480008BF2D7 /* __init__.pyc */,
+				48F659C2236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib */,
+			);
+			path = libusbfinder;
+			sourceTree = "<group>";
+		};
+		48F659B9236D4480008BF2D7 /* bottles */ = {
+			isa = PBXGroup;
+			children = (
+				48F659BA236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz */,
+				48F659BB236D4480008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz */,
+				48F659BC236D4480008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz */,
+				48F659BD236D4480008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz */,
+				48F659BE236D4480008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz */,
+				48F659BF236D4480008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz */,
+				48F659C0236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz */,
+			);
+			path = bottles;
+			sourceTree = "<group>";
+		};
+		48F659C5236D4480008BF2D7 /* aes-keys */ = {
+			isa = PBXGroup;
+			children = (
+				48F659C6236D4480008BF2D7 /* S5L8920-firmware */,
+			);
+			path = "aes-keys";
+			sourceTree = "<group>";
+		};
+		48F659CB236D4480008BF2D7 /* usb */ = {
+			isa = PBXGroup;
+			children = (
+				48F659CC236D4480008BF2D7 /* _lookup.pyc */,
+				48F659CD236D4480008BF2D7 /* legacy.py */,
+				48F659CE236D4480008BF2D7 /* LICENSE */,
+				48F659CF236D4480008BF2D7 /* _objfinalizer.py */,
+				48F659D0236D4480008BF2D7 /* util.py */,
+				48F659D1236D4480008BF2D7 /* control.py */,
+				48F659D2236D4480008BF2D7 /* __init__.py */,
+				48F659D3236D4480008BF2D7 /* core.py */,
+				48F659D4236D4480008BF2D7 /* backend */,
+				48F659DB236D4480008BF2D7 /* control.pyc */,
+				48F659DC236D4480008BF2D7 /* libloader.pyc */,
+				48F659DD236D4480008BF2D7 /* _interop.py */,
+				48F659DE236D4480008BF2D7 /* _interop.pyc */,
+				48F659DF236D4480008BF2D7 /* _lookup.py */,
+				48F659E0236D4480008BF2D7 /* ACKNOWLEDGEMENTS */,
+				48F659E1236D4480008BF2D7 /* _debug.pyc */,
+				48F659E2236D4480008BF2D7 /* __init__.pyc */,
+				48F659E3236D4480008BF2D7 /* _debug.py */,
+				48F659E4236D4480008BF2D7 /* legacy.pyc */,
+				48F659E5236D4480008BF2D7 /* README.rst */,
+				48F659E6236D4480008BF2D7 /* core.pyc */,
+				48F659E7236D4480008BF2D7 /* libloader.py */,
+				48F659E8236D4480008BF2D7 /* util.pyc */,
+				48F659E9236D4480008BF2D7 /* _objfinalizer.pyc */,
+			);
+			path = usb;
+			sourceTree = "<group>";
+		};
+		48F659D4236D4480008BF2D7 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				48F659D5236D4480008BF2D7 /* openusb.py */,
+				48F659D6236D4480008BF2D7 /* libusb1.pyc */,
+				48F659D7236D4480008BF2D7 /* __init__.py */,
+				48F659D8236D4480008BF2D7 /* __init__.pyc */,
+				48F659D9236D4480008BF2D7 /* libusb0.py */,
+				48F659DA236D4480008BF2D7 /* libusb1.py */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		48FD0834236CD75500BFAFFE = {
+			isa = PBXGroup;
+			children = (
+				48FD083F236CD75500BFAFFE /* CheckNonceGUI */,
+				48FD083E236CD75500BFAFFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48FD083E236CD75500BFAFFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48FD083D236CD75500BFAFFE /* CheckNonceGUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48FD083F236CD75500BFAFFE /* CheckNonceGUI */ = {
+			isa = PBXGroup;
+			children = (
+				48F6592A236D447F008BF2D7 /* ipwndfu */,
+				48F6599C236D4480008BF2D7 /* ipwndfu_public */,
+				48FD0A5A236CF1E900BFAFFE /* files */,
+				48FD0A84236CF1E900BFAFFE /* pwn.sh */,
+				48FD0B2E236CF1EA00BFAFFE /* rec.sh */,
+				48FD0840236CD75500BFAFFE /* AppDelegate.swift */,
+				48FD0842236CD75500BFAFFE /* ViewController.swift */,
+				48FD0844236CD75700BFAFFE /* Assets.xcassets */,
+				48FD0846236CD75700BFAFFE /* Main.storyboard */,
+				48FD0849236CD75700BFAFFE /* Info.plist */,
+				48FD084A236CD75700BFAFFE /* CheckNonceGUI.entitlements */,
+			);
+			path = CheckNonceGUI;
+			sourceTree = "<group>";
+		};
+		48FD0A5A236CF1E900BFAFFE /* files */ = {
+			isa = PBXGroup;
+			children = (
+				48F65ADA236D4927008BF2D7 /* ipwndfu */,
+				48F65ADB236D4927008BF2D7 /* ipwndfu_public */,
+				48FD0A5B236CF1E900BFAFFE /* ibss.iPad7,6.img4 */,
+				48FD0A5C236CF1E900BFAFFE /* igetnonce */,
+				48FD0A5D236CF1E900BFAFFE /* ibec.iPad4,6.img4 */,
+				48FD0A5E236CF1E900BFAFFE /* ibss.iPhone9,2.img4 */,
+				48FD0A5F236CF1E900BFAFFE /* ibss.iPad4,3.img4 */,
+				48FD0A60236CF1E900BFAFFE /* ibss.iPhone10,6.img4 */,
+				48FD0A61236CF1E900BFAFFE /* ibss.iPad7,12.img4 */,
+				48FD0A62236CF1E900BFAFFE /* ibss.iPad4,2.img4 */,
+				48FD0A63236CF1E900BFAFFE /* ibss.iPhone9,3.img4 */,
+				48FD0A64236CF1E900BFAFFE /* ibec.iPad4,7.img4 */,
+				48FD0A65236CF1E900BFAFFE /* ibss.iPad4,9.img4 */,
+				48FD0A66236CF1E900BFAFFE /* ibss.iPhone6,1.img4 */,
+				48FD0A67236CF1E900BFAFFE /* junk.txt */,
+				48FD0A68236CF1E900BFAFFE /* ibss.iPhone9,4.img4 */,
+				48FD0A69236CF1E900BFAFFE /* ibss.iPad4,5.img4 */,
+				48FD0A6A236CF1E900BFAFFE /* ibec.iPhone6,1.img4 */,
+				48FD0A6B236CF1E900BFAFFE /* ibss.iPad4,4.img4 */,
+				48FD0A6C236CF1E900BFAFFE /* ibec.iPad4,1.img4 */,
+				48FD0A6D236CF1E900BFAFFE /* ibss.iPad4,8.img4 */,
+				48FD0A6E236CF1E900BFAFFE /* ibss.iPhone10,1.img4 */,
+				48FD0A6F236CF1E900BFAFFE /* ibss.iPhone10,2.img4 */,
+				48FD0A70236CF1E900BFAFFE /* irecovery */,
+				48FD0A71236CF1E900BFAFFE /* ibss.iPad4,7.img4 */,
+				48FD0A72236CF1E900BFAFFE /* ibec.iPad4,2.img4 */,
+				48FD0A73236CF1E900BFAFFE /* lsusb */,
+				48FD0A74236CF1E900BFAFFE /* ibss.iPod9,1.img4 */,
+				48FD0A75236CF1E900BFAFFE /* ibss.iPhone6,2.img4 */,
+				48FD0A76236CF1E900BFAFFE /* ibec.iPad4,3.img4 */,
+				48FD0A77236CF1E900BFAFFE /* ibss.iPad4,6.img4 */,
+				48FD0A78236CF1E900BFAFFE /* ibec.iPhone6,2.img4 */,
+				48FD0A79236CF1E900BFAFFE /* ibss.iPhone10,3.img4 */,
+				48FD0A7A236CF1E900BFAFFE /* ibss.iPad7,11.img4 */,
+				48FD0A7B236CF1E900BFAFFE /* ibss.iPad4,1.img4 */,
+				48FD0A7C236CF1E900BFAFFE /* ibec.iPad4,4.img4 */,
+				48FD0A7D236CF1E900BFAFFE /* ibss.iPhone10,4.img4 */,
+				48FD0A7E236CF1E900BFAFFE /* ibec.iPad4,8.img4 */,
+				48FD0A7F236CF1E900BFAFFE /* ibec.iPad4,9.img4 */,
+				48FD0A80236CF1E900BFAFFE /* ibss.iPhone10,5.img4 */,
+				48FD0A81236CF1E900BFAFFE /* ibss.iPad7,5.img4 */,
+				48FD0A82236CF1E900BFAFFE /* ibec.iPad4,5.img4 */,
+				48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48FD083C236CD75500BFAFFE /* CheckNonceGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48FD0863236CD75700BFAFFE /* Build configuration list for PBXNativeTarget "CheckNonceGUI" */;
+			buildPhases = (
+				48FD0839236CD75500BFAFFE /* Sources */,
+				48FD083A236CD75500BFAFFE /* Frameworks */,
+				48FD083B236CD75500BFAFFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckNonceGUI;
+			productName = CheckNonceGUI;
+			productReference = 48FD083D236CD75500BFAFFE /* CheckNonceGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48FD0835236CD75500BFAFFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = matty;
+				TargetAttributes = {
+					48FD083C236CD75500BFAFFE = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 48FD0838236CD75500BFAFFE /* Build configuration list for PBXProject "CheckNonceGUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48FD0834236CD75500BFAFFE;
+			productRefGroup = 48FD083E236CD75500BFAFFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48FD083C236CD75500BFAFFE /* CheckNonceGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48FD083B236CD75500BFAFFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F65A63236D4480008BF2D7 /* nor.pyc in Resources */,
+				48F65A3E236D4480008BF2D7 /* openusb.py in Resources */,
+				48F65A4D236D4480008BF2D7 /* legacy.pyc in Resources */,
+				48FD0B47236CF1EA00BFAFFE /* lsusb in Resources */,
+				48F65AAD236D4480008BF2D7 /* _interop.pyc in Resources */,
+				48F65AB2236D4480008BF2D7 /* _debug.py in Resources */,
+				48F65A31236D4480008BF2D7 /* S5L8920-firmware in Resources */,
+				48F65A49236D4480008BF2D7 /* ACKNOWLEDGEMENTS in Resources */,
+				48FD0B43236CF1EA00BFAFFE /* ibss.iPhone10,2.img4 in Resources */,
+				48F65A11236D4480008BF2D7 /* LICENSE in Resources */,
+				48F65A8C236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz in Resources */,
+				48FD0B56236CF1EA00BFAFFE /* ibec.iPad4,5.img4 in Resources */,
+				48F65A51236D4480008BF2D7 /* util.pyc in Resources */,
+				48F65A21236D4480008BF2D7 /* dfu.py in Resources */,
+				48F65A0B236D4480008BF2D7 /* alloc8.py in Resources */,
+				48F65A30236D4480008BF2D7 /* ibootpatcher in Resources */,
+				48F65A5A236D4480008BF2D7 /* dfu.pyc in Resources */,
+				48F65AA8236D4480008BF2D7 /* libusb0.py in Resources */,
+				48F65A54236D4480008BF2D7 /* utilities.pyc in Resources */,
+				48FD0B37236CF1EA00BFAFFE /* ibss.iPhone9,3.img4 in Resources */,
+				48F65A50236D4480008BF2D7 /* libloader.py in Resources */,
+				48FD0B34236CF1EA00BFAFFE /* ibss.iPhone10,6.img4 in Resources */,
+				48F65A3B236D4480008BF2D7 /* control.py in Resources */,
+				48F65AC7236D4481008BF2D7 /* SHAtter.pyc in Resources */,
+				48F65A7B236D4480008BF2D7 /* device_platform.py in Resources */,
+				48F65A1B236D4480008BF2D7 /* ibss-flash-nor-shellcode.bin in Resources */,
+				48F65A99236D4480008BF2D7 /* limera1n.py in Resources */,
+				48F65AAE236D4480008BF2D7 /* _lookup.py in Resources */,
+				48F65A46236D4480008BF2D7 /* _interop.py in Resources */,
+				48F65A48236D4480008BF2D7 /* _lookup.py in Resources */,
+				48FD0B45236CF1EA00BFAFFE /* ibss.iPad4,7.img4 in Resources */,
+				48F65A3D236D4480008BF2D7 /* core.py in Resources */,
+				48F65A57236D4480008BF2D7 /* image3_24Kpwn.pyc in Resources */,
+				48F65AAF236D4480008BF2D7 /* ACKNOWLEDGEMENTS in Resources */,
+				48FD0B38236CF1EA00BFAFFE /* ibec.iPad4,7.img4 in Resources */,
+				48F65A42236D4480008BF2D7 /* libusb0.py in Resources */,
+				48F65A5D236D4480008BF2D7 /* image3.py in Resources */,
+				48FD0B2F236CF1EA00BFAFFE /* ibss.iPad7,6.img4 in Resources */,
+				48F65A7E236D4480008BF2D7 /* SHAtter-shellcode.bin in Resources */,
+				48F65ACB236D4481008BF2D7 /* steaks4uce.py in Resources */,
+				48F65A55236D4480008BF2D7 /* limera1n.pyc in Resources */,
+				48FD0B4B236CF1EA00BFAFFE /* ibss.iPad4,6.img4 in Resources */,
+				48F65AC8236D4481008BF2D7 /* usbexec.py in Resources */,
+				48FD0B3B236CF1EA00BFAFFE /* junk.txt in Resources */,
+				48F65A75236D4480008BF2D7 /* README in Resources */,
+				48F65A1E236D4480008BF2D7 /* usb_0xA1_2_arm64.bin in Resources */,
+				48F65A4C236D4480008BF2D7 /* _debug.py in Resources */,
+				48F65A95236D4480008BF2D7 /* usbexec.pyc in Resources */,
+				48F65A79236D4480008BF2D7 /* LICENSE in Resources */,
+				48F65AA5236D4480008BF2D7 /* libusb1.pyc in Resources */,
+				48F65A77236D4480008BF2D7 /* ipwnrecovery in Resources */,
+				48F65A9D236D4480008BF2D7 /* legacy.py in Resources */,
+				48F65A39236D4480008BF2D7 /* _objfinalizer.py in Resources */,
+				48F65A4F236D4480008BF2D7 /* core.pyc in Resources */,
+				48FD0B3D236CF1EA00BFAFFE /* ibss.iPad4,5.img4 in Resources */,
+				48F65A19236D4480008BF2D7 /* 24Kpwn-shellcode.bin in Resources */,
+				48F65A61236D4480008BF2D7 /* SHAtter.pyc in Resources */,
+				48F65A2D236D4480008BF2D7 /* __init__.pyc in Resources */,
+				48F65A28236D4480008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz in Resources */,
+				48F65A10236D4480008BF2D7 /* recovery.py in Resources */,
+				48F65A4B236D4480008BF2D7 /* __init__.pyc in Resources */,
+				48F65A44236D4480008BF2D7 /* control.pyc in Resources */,
+				48F65AA0236D4480008BF2D7 /* util.py in Resources */,
+				48F65A5C236D4480008BF2D7 /* image3.pyc in Resources */,
+				48F65AAC236D4480008BF2D7 /* _interop.py in Resources */,
+				48FD0B4C236CF1EA00BFAFFE /* ibec.iPhone6,2.img4 in Resources */,
+				48F65A89236D4480008BF2D7 /* nor.py in Resources */,
+				48F65AA2236D4480008BF2D7 /* __init__.py in Resources */,
+				48F65A78236D4480008BF2D7 /* recovery.py in Resources */,
+				48F65A47236D4480008BF2D7 /* _interop.pyc in Resources */,
+				48FD0B31236CF1EA00BFAFFE /* ibec.iPad4,6.img4 in Resources */,
+				48F65A4A236D4480008BF2D7 /* _debug.pyc in Resources */,
+				48F65A8E236D4480008BF2D7 /* libusb-1.0.21.yosemite.bottle.tar.gz in Resources */,
+				48FD0B46236CF1EA00BFAFFE /* ibec.iPad4,2.img4 in Resources */,
+				48F65AC0236D4481008BF2D7 /* dfu.pyc in Resources */,
+				48F65A9A236D4480008BF2D7 /* image3_24Kpwn.py in Resources */,
+				48F65AC3236D4481008BF2D7 /* image3.py in Resources */,
+				48F65A8B236D4480008BF2D7 /* __init__.py in Resources */,
+				48F65A1A236D4480008BF2D7 /* checkm8_arm64.bin in Resources */,
+				48F65AC1236D4481008BF2D7 /* dfuexec.pyc in Resources */,
+				48F65ABA236D4480008BF2D7 /* utilities.pyc in Resources */,
+				48F65A3C236D4480008BF2D7 /* __init__.py in Resources */,
+				48F65A76236D4480008BF2D7 /* checkm8.py in Resources */,
+				48F65AB3236D4480008BF2D7 /* legacy.pyc in Resources */,
+				48F65AAB236D4480008BF2D7 /* libloader.pyc in Resources */,
+				48F65AC2236D4481008BF2D7 /* image3.pyc in Resources */,
+				48F65A98236D4480008BF2D7 /* JAILBREAK-GUIDE.md in Resources */,
+				48F65A32236D4480008BF2D7 /* JAILBREAK-GUIDE.md in Resources */,
+				48F65A23236D4480008BF2D7 /* nor.py in Resources */,
+				48FD0B36236CF1EA00BFAFFE /* ibss.iPad4,2.img4 in Resources */,
+				48F65A82236D4480008BF2D7 /* usb_0xA1_2_armv7.bin in Resources */,
+				48F65A38236D4480008BF2D7 /* LICENSE in Resources */,
+				48F65AB4236D4480008BF2D7 /* README.rst in Resources */,
+				48FD0B30236CF1EA00BFAFFE /* igetnonce in Resources */,
+				48FD0B57236CF1EA00BFAFFE /* ibss.iPhone9,1.img4 in Resources */,
+				48F65A59236D4480008BF2D7 /* dfuexec.py in Resources */,
+				48F65A16236D4480008BF2D7 /* t8015_shellcode_arm64.bin in Resources */,
+				48F65A24236D4480008BF2D7 /* device_platform.pyc in Resources */,
+				48F65A8F236D4480008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz in Resources */,
+				48FD0B33236CF1EA00BFAFFE /* ibss.iPad4,3.img4 in Resources */,
+				48F65AA3236D4480008BF2D7 /* core.py in Resources */,
+				48F65A93236D4480008BF2D7 /* __init__.pyc in Resources */,
+				48F65A90236D4480008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz in Resources */,
+				48F65A5F236D4480008BF2D7 /* SHAtter.py in Resources */,
+				48F65A25236D4480008BF2D7 /* __init__.py in Resources */,
+				48F65A13236D4480008BF2D7 /* device_platform.py in Resources */,
+				48FD0B51236CF1EA00BFAFFE /* ibss.iPhone10,4.img4 in Resources */,
+				48F65A45236D4480008BF2D7 /* libloader.pyc in Resources */,
+				48F65A12236D4480008BF2D7 /* recovery.pyc in Resources */,
+				48FD0B39236CF1EA00BFAFFE /* ibss.iPad4,9.img4 in Resources */,
+				48FD0B32236CF1EA00BFAFFE /* ibss.iPhone9,2.img4 in Resources */,
+				48F65AC4236D4481008BF2D7 /* utilities.py in Resources */,
+				48F65A58236D4480008BF2D7 /* steaks4uce.pyc in Resources */,
+				48F65A74236D4480008BF2D7 /* checkm8.pyc in Resources */,
+				48FD0B52236CF1EA00BFAFFE /* ibec.iPad4,8.img4 in Resources */,
+				48FD0B53236CF1EA00BFAFFE /* ibec.iPad4,9.img4 in Resources */,
+				48FD0B41236CF1EA00BFAFFE /* ibss.iPad4,8.img4 in Resources */,
+				48F65A27236D4480008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz in Resources */,
+				48F65A9B236D4480008BF2D7 /* README.md in Resources */,
+				48F65AA4236D4480008BF2D7 /* openusb.py in Resources */,
+				48F65AA7236D4480008BF2D7 /* __init__.pyc in Resources */,
+				48F65AB6236D4480008BF2D7 /* libloader.py in Resources */,
+				48F65A81236D4480008BF2D7 /* ibss-flash-nor-shellcode.bin in Resources */,
+				48FD0B48236CF1EA00BFAFFE /* ibss.iPod9,1.img4 in Resources */,
+				48F65A2C236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz in Resources */,
+				48F65A96236D4480008BF2D7 /* ibootpatcher in Resources */,
+				48F65AC9236D4481008BF2D7 /* nor.pyc in Resources */,
+				48F65ADD236D4928008BF2D7 /* ipwndfu_public in Resources */,
+				48F65A0C236D4480008BF2D7 /* checkm8.pyc in Resources */,
+				48F65AB7236D4480008BF2D7 /* util.pyc in Resources */,
+				48F65A53236D4480008BF2D7 /* alloc8.pyc in Resources */,
+				48FD0B3F236CF1EA00BFAFFE /* ibss.iPad4,4.img4 in Resources */,
+				48FD0845236CD75700BFAFFE /* Assets.xcassets in Resources */,
+				48FD0B3A236CF1EA00BFAFFE /* ibss.iPhone6,1.img4 in Resources */,
+				48F65A2A236D4480008BF2D7 /* libusb-1.0.19.mountain_lion.bottle.1.tar.gz in Resources */,
+				48F65A36236D4480008BF2D7 /* _lookup.pyc in Resources */,
+				48F65AA6236D4480008BF2D7 /* __init__.py in Resources */,
+				48F65A20236D4480008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin in Resources */,
+				48F65A8A236D4480008BF2D7 /* device_platform.pyc in Resources */,
+				48F65A1F236D4480008BF2D7 /* checkm8_armv7.bin in Resources */,
+				48F65A14236D4480008BF2D7 /* steaks4uce-shellcode.bin in Resources */,
+				48F65A80236D4480008BF2D7 /* checkm8_arm64.bin in Resources */,
+				48FD0B4D236CF1EA00BFAFFE /* ibss.iPhone10,3.img4 in Resources */,
+				48F65AB8236D4480008BF2D7 /* _objfinalizer.pyc in Resources */,
+				48F65A2F236D4480008BF2D7 /* usbexec.pyc in Resources */,
+				48F65A9F236D4480008BF2D7 /* _objfinalizer.py in Resources */,
+				48F65A52236D4480008BF2D7 /* _objfinalizer.pyc in Resources */,
+				48F65A5B236D4480008BF2D7 /* dfuexec.pyc in Resources */,
+				48F65A0E236D4480008BF2D7 /* checkm8.py in Resources */,
+				48F65AB5236D4480008BF2D7 /* core.pyc in Resources */,
+				48FD0B49236CF1EA00BFAFFE /* ibss.iPhone6,2.img4 in Resources */,
+				48F65A17236D4480008BF2D7 /* 0x8015.bin in Resources */,
+				48F65A86236D4480008BF2D7 /* t8010_t8011_disable_wxn_arm64.bin in Resources */,
+				48F65A33236D4480008BF2D7 /* limera1n.py in Resources */,
+				48F65A65236D4480008BF2D7 /* steaks4uce.py in Resources */,
+				48F65A15236D4480008BF2D7 /* alloc8-shellcode.bin in Resources */,
+				48F65AD7236D4481008BF2D7 /* rmsigchks.py in Resources */,
+				48F65ADC236D4928008BF2D7 /* ipwndfu in Resources */,
+				48F65AAA236D4480008BF2D7 /* control.pyc in Resources */,
+				48F65ACA236D4481008BF2D7 /* ipwndfu in Resources */,
+				48FD0B44236CF1EA00BFAFFE /* irecovery in Resources */,
+				48FD0B3C236CF1EA00BFAFFE /* ibss.iPhone9,4.img4 in Resources */,
+				48F65ABF236D4481008BF2D7 /* dfuexec.py in Resources */,
+				48F65A7C236D4480008BF2D7 /* steaks4uce-shellcode.bin in Resources */,
+				48FD0B58236CF1EA00BFAFFE /* pwn.sh in Resources */,
+				48FD0B4E236CF1EA00BFAFFE /* ibss.iPad7,11.img4 in Resources */,
+				48F65A35236D4480008BF2D7 /* README.md in Resources */,
+				48F65A97236D4480008BF2D7 /* S5L8920-firmware in Resources */,
+				48FD0B42236CF1EA00BFAFFE /* ibss.iPhone10,1.img4 in Resources */,
+				48F65A40236D4480008BF2D7 /* __init__.py in Resources */,
+				48F65ABC236D4481008BF2D7 /* .gitignore in Resources */,
+				48F65AA9236D4480008BF2D7 /* libusb1.py in Resources */,
+				48FD0B40236CF1EA00BFAFFE /* ibec.iPad4,1.img4 in Resources */,
+				48F65A87236D4480008BF2D7 /* dfu.py in Resources */,
+				48F65AB1236D4480008BF2D7 /* __init__.pyc in Resources */,
+				48F65A92236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.tar.gz in Resources */,
+				48F65A34236D4480008BF2D7 /* image3_24Kpwn.py in Resources */,
+				48F65A9C236D4480008BF2D7 /* _lookup.pyc in Resources */,
+				48F65A84236D4480008BF2D7 /* usb_0xA1_2_arm64.bin in Resources */,
+				48FD0B4A236CF1EA00BFAFFE /* ibec.iPad4,3.img4 in Resources */,
+				48FD0848236CD75700BFAFFE /* Main.storyboard in Resources */,
+				48F65A4E236D4480008BF2D7 /* README.rst in Resources */,
+				48FD0B35236CF1EA00BFAFFE /* ibss.iPad7,12.img4 in Resources */,
+				48F65A1D236D4480008BF2D7 /* limera1n-shellcode.bin in Resources */,
+				48F65A1C236D4480008BF2D7 /* usb_0xA1_2_armv7.bin in Resources */,
+				48FD0B4F236CF1EA00BFAFFE /* ibss.iPad4,1.img4 in Resources */,
+				48FD0B3E236CF1EA00BFAFFE /* ibec.iPhone6,1.img4 in Resources */,
+				48FD0B50236CF1EA00BFAFFE /* ibec.iPad4,4.img4 in Resources */,
+				48F65A83236D4480008BF2D7 /* limera1n-shellcode.bin in Resources */,
+				48FD0B55236CF1EA00BFAFFE /* ibss.iPad7,5.img4 in Resources */,
+				48F65AA1236D4480008BF2D7 /* control.py in Resources */,
+				48F65A7F236D4480008BF2D7 /* 24Kpwn-shellcode.bin in Resources */,
+				48F65ABE236D4481008BF2D7 /* steaks4uce.pyc in Resources */,
+				48F65A56236D4480008BF2D7 /* .gitignore in Resources */,
+				48F65A2B236D4480008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz in Resources */,
+				48F65A64236D4480008BF2D7 /* ipwndfu in Resources */,
+				48F65A7D236D4480008BF2D7 /* alloc8-shellcode.bin in Resources */,
+				48F65A8D236D4480008BF2D7 /* libusb-1.0.22.el_capitan.bottle.tar.gz in Resources */,
+				48F65AB9236D4480008BF2D7 /* alloc8.pyc in Resources */,
+				48F65A7A236D4480008BF2D7 /* recovery.pyc in Resources */,
+				48F65A41236D4480008BF2D7 /* __init__.pyc in Resources */,
+				48F65A91236D4480008BF2D7 /* libusb-1.0.22.high_sierra.bottle.tar.gz in Resources */,
+				48F65A62236D4480008BF2D7 /* usbexec.py in Resources */,
+				48F65A3F236D4480008BF2D7 /* libusb1.pyc in Resources */,
+				48F65A43236D4480008BF2D7 /* libusb1.py in Resources */,
+				48F65A18236D4480008BF2D7 /* SHAtter-shellcode.bin in Resources */,
+				48F65AB0236D4480008BF2D7 /* _debug.pyc in Resources */,
+				48FD0BEE236CF1EA00BFAFFE /* rec.sh in Resources */,
+				48F65A85236D4480008BF2D7 /* checkm8_armv7.bin in Resources */,
+				48F65A29236D4480008BF2D7 /* libusb-1.0.20.mavericks.bottle.1.tar.gz in Resources */,
+				48F65A73236D4480008BF2D7 /* alloc8.py in Resources */,
+				48F65A5E236D4480008BF2D7 /* utilities.py in Resources */,
+				48F65A9E236D4480008BF2D7 /* LICENSE in Resources */,
+				48F65A26236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz in Resources */,
+				48F65A37236D4480008BF2D7 /* legacy.py in Resources */,
+				48F65ABB236D4481008BF2D7 /* limera1n.pyc in Resources */,
+				48F65AC5236D4481008BF2D7 /* SHAtter.py in Resources */,
+				48FD0B54236CF1EA00BFAFFE /* ibss.iPhone10,5.img4 in Resources */,
+				48F65A3A236D4480008BF2D7 /* util.py in Resources */,
+				48F65ABD236D4481008BF2D7 /* image3_24Kpwn.pyc in Resources */,
+				48F65A0F236D4480008BF2D7 /* ipwnrecovery in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48FD0839236CD75500BFAFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F65A88236D4480008BF2D7 /* Makefile in Sources */,
+				48F65A22236D4480008BF2D7 /* Makefile in Sources */,
+				48FD0843236CD75500BFAFFE /* ViewController.swift in Sources */,
+				48FD0841236CD75500BFAFFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48FD0846236CD75700BFAFFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48FD0847236CD75700BFAFFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48FD0861236CD75700BFAFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48FD0862236CD75700BFAFFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		48FD0864236CD75700BFAFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CheckNonceGUI/CheckNonceGUI.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ipwndfu/bin/*",
+					"ipwndfu/aes-keys/*",
+					"ipwndfu/libusbfinder/*",
+					"ipwndfu/usb/backend/*",
+					"ipwndfu/usb/*",
+					"ipwndfu/libusbfinder/bottles/*",
+					"ipwndfu/repo/*",
+					"ipwndfu/nor-backups/*",
+					"ipwndfu_public/nor-backups/*",
+					"ipwndfu/*",
+					"ipwndfu_public/repo/*",
+					"ipwndfu_public/bin/*",
+					"ipwndfu_public/*",
+					"ipwndfu_public/libusbfinder/*",
+					"ipwndfu_public/usb/*",
+					"ipwndfu_public/aes-keys/*",
+					"ipwndfu_public/libusbfinder/bottles/*",
+					"ipwndfu_public/usb/backend/*",
+				);
+				INFOPLIST_FILE = CheckNonceGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
+					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
+				);
+				MARKETING_VERSION = 0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		48FD0865236CD75700BFAFFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CheckNonceGUI/CheckNonceGUI.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ipwndfu/bin/*",
+					"ipwndfu/aes-keys/*",
+					"ipwndfu/libusbfinder/*",
+					"ipwndfu/usb/backend/*",
+					"ipwndfu/usb/*",
+					"ipwndfu/libusbfinder/bottles/*",
+					"ipwndfu/repo/*",
+					"ipwndfu/nor-backups/*",
+					"ipwndfu_public/nor-backups/*",
+					"ipwndfu/*",
+					"ipwndfu_public/repo/*",
+					"ipwndfu_public/bin/*",
+					"ipwndfu_public/*",
+					"ipwndfu_public/libusbfinder/*",
+					"ipwndfu_public/usb/*",
+					"ipwndfu_public/aes-keys/*",
+					"ipwndfu_public/libusbfinder/bottles/*",
+					"ipwndfu_public/usb/backend/*",
+				);
+				INFOPLIST_FILE = CheckNonceGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
+					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
+				);
+				MARKETING_VERSION = 0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48FD0838236CD75500BFAFFE /* Build configuration list for PBXProject "CheckNonceGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48FD0861236CD75700BFAFFE /* Debug */,
+				48FD0862236CD75700BFAFFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48FD0863236CD75700BFAFFE /* Build configuration list for PBXNativeTarget "CheckNonceGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48FD0864236CD75700BFAFFE /* Debug */,
+				48FD0865236CD75700BFAFFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48FD0835236CD75500BFAFFE /* Project object */;
+}
