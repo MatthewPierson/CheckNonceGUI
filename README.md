@@ -1,13 +1,12 @@
 # CheckNonceGUI
 
-GUI for my Checkm8 based APNonce Setter. This is a very simple swift app that will place your device into PWNDFU mode using ipwndfu/checkm8, let the user pick a valid, saved SHSH file and grab the generator from it, place the device into PWNDREC mode and set the generator to that found in the SHSH file. This allows for downgrades/upgrades to unsiged iOS versions for compatible devices, limited to versions with a signed compatible SEP/Baseband for now. 
+GUI for my Checkm8 based APNonce Setter. This is a very simple swift app that will place your device into PWNDFU mode using ipwndfu/checkm8, let the user pick a valid previously saved SHSH file and grab the generator from it, place the device into PWNDREC mode and set the generator to that found in the SHSH file. This allows for downgrades/upgrades to unsiged iOS versions for compatible devices, limited to versions with a signed compatible SEP/Baseband for now. 
 
 ## Usage
 Place the .app into "/Applications" and run it from there. 
 
 ## Device Support
-<br/>
-<br/>
+
 iPhone 5s
 
 iPhone 7

@@ -141,7 +141,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction func setGenerator(_ sender: NSButton) {
-        
+    
         print("Entering recovery mode")
         let alert = NSAlert.init()
         let test = try? runAndPrint("/bin/sh", "/Applications/CheckNonceGUI.app/Contents/Resources/rec.sh")
@@ -170,7 +170,7 @@ class ViewController: NSViewController {
             print("Your generator is: \(finalgenerator)")
         }
         apnonce_field.stringValue = finalgenerator
-        var irec1 = irecoveryStuff(argu: "-c \"setenv com.apple.System.boot-nonce \(finalgenerator)\"")
+        var irec1 = irecoveryStuff(argu: "-c setenv com.apple.System.boot-nonce \(finalgenerator)")
         if irec1 == true {
             alert.messageText = "iRecovery stuff pt2"
             alert.informativeText = "Set generator"
