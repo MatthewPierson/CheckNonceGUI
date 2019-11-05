@@ -15,12 +15,13 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.window?.level = .floating
         let alert = NSAlert.init()
         alert.messageText = "Information"
-        alert.informativeText = "Press OK to continue to the app\n\nAPP MUST BE INSTALLED TO /Applications !!! IF IT IS NOT INSTALLED THERE, CLOSE THE APP AND MOVE IT THERE\n\nPlease try using your brain before you spam me on twitter/github/discord asking stupid questions."
+        alert.informativeText = "Press OK to continue to the app\n\nAPP MUST BE INSTALLED TO '/Applications' !!! IF IT IS NOT INSTALLED THERE, CLOSE THE APP AND MOVE IT THERE\n\nPlease try using your brain before you spam me on twitter/github/discord asking stupid questions."
         alert.addButton(withTitle: "OK")
         alert.runModal()
-        view.window?.level = .floating
+        
     }
     
     @IBOutlet weak var filename_field: NSTextField!
@@ -29,7 +30,7 @@ class ViewController: NSViewController {
     
     @IBAction func helpButton(_ sender: NSButton) {
         let alert = NSAlert.init()
-        alert.messageText = "Version 0.0.7"
+        alert.messageText = "Version 0.1.1"
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
@@ -50,7 +51,7 @@ class ViewController: NSViewController {
         dialog.allowedFileTypes        = ["shsh2", "shsh"];
 
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
-            let result = dialog.url // Pathname of the file
+            let result = dialog.url
             
             if (result != nil) {
                 let path = result!.path
@@ -72,7 +73,6 @@ class ViewController: NSViewController {
    
     func irecoveryStuff(argu: String) -> Bool {
         
-        
         let alert = NSAlert.init()
         let test = try? runAndPrint("/Applications/CheckNonceGUI.app/Contents/Resources/irecovery", "\(argu)")
         if test != nil {
@@ -90,18 +90,8 @@ class ViewController: NSViewController {
             print("Gave error")
             return false
         }
-//        let process = Process()
-//        process.executableURL = URL(fileURLWithPath:"/Applications/CheckNonceGUI.app/Contents/Resources/irecovery")
-//        process.arguments = ["\(argu)"]
-//        process.terminationHandler = { (process) in
-//           print("\ndidFinish: \(!process.isRunning)")
-//        print("did \(argu)")
-//        }
-//        do {
-//          try process.run()
-//        } catch {}
     }
-    
+
     func getGenerator(shshPath: String) -> String {
         if shshPath != nil {
         do {
@@ -243,9 +233,7 @@ class ViewController: NSViewController {
             alert.runModal()
             print("Gave error")
         }
-            
     }
-
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.

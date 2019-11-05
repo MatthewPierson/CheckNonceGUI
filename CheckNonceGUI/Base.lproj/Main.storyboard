@@ -134,16 +134,6 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kQx-1z-if2">
-                                <rect key="frame" x="100" y="53" width="280" height="32"/>
-                                <buttonCell key="cell" type="push" title="Enter PWNREC mode and set generator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jUG-vp-r86">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="setGenerator:" target="XfG-lQ-9wD" id="Pqi-k3-eHM"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-Ys-a0q">
                                 <rect key="frame" x="18" y="10" width="161" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Made by @mosk_i (Matty)" id="vRB-1p-pur">
@@ -190,7 +180,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oew-iU-B4W">
-                                <rect key="frame" x="296" y="10" width="134" height="21"/>
+                                <rect key="frame" x="20" y="57" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="bXv-gY-LlE">
                                     <font key="font" metaFont="system"/>
@@ -199,7 +189,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxJ-fg-yZh">
-                                <rect key="frame" x="294" y="39" width="65" height="16"/>
+                                <rect key="frame" x="18" y="86" width="65" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Generator" id="Ocb-l7-V47">
                                     <font key="font" metaFont="system"/>
@@ -207,14 +197,23 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQx-1z-if2">
+                                <rect key="frame" x="186" y="50" width="280" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Enter PWNREC mode and set generator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jUG-vp-r86">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="setGenerator:" target="XfG-lQ-9wD" id="Pqi-k3-eHM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="kQx-1z-if2" secondAttribute="bottom" constant="60" id="6Su-zh-tN3"/>
                             <constraint firstAttribute="bottom" secondItem="aW0-Ys-a0q" secondAttribute="bottom" constant="10" id="BfI-bZ-VXs"/>
                             <constraint firstAttribute="trailing" secondItem="CVY-7w-YOi" secondAttribute="trailing" constant="10" id="E0w-xL-3WJ"/>
                             <constraint firstItem="aW0-Ys-a0q" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="ES9-o4-Zlb"/>
                             <constraint firstItem="KLd-G9-edR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="60" id="Ip5-Qx-MFB"/>
-                            <constraint firstItem="kQx-1z-if2" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="VcS-fP-QNl"/>
                             <constraint firstItem="IQC-xl-g8c" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="aBW-TC-LNy"/>
                             <constraint firstItem="KLd-G9-edR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="akg-aN-Wzc"/>
                             <constraint firstItem="NyW-87-11f" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="ttU-Es-dyG"/>

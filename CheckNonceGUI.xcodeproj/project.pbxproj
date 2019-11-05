@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -493,7 +493,6 @@
 				378DA92CAEB90FCF365A2AF5 /* Pods-CheckNonceGUI.debug.xcconfig */,
 				6D9E1DCC72E91566A68308B5 /* Pods-CheckNonceGUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1393,7 +1392,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1439,7 +1438,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
