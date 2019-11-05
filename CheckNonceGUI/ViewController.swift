@@ -34,7 +34,7 @@ class ViewController: NSViewController {
     
     @IBAction func helpButton(_ sender: NSButton) {
         let alert = NSAlert.init()
-        alert.messageText = "Version 0.5.2"
+        alert.messageText = "Version 0.5.3"
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
@@ -48,7 +48,6 @@ class ViewController: NSViewController {
         alert.alertStyle = .warning
 
         alert.addButton(withTitle: "Set generator")
-        alert.addButton(withTitle: "Cancel")
         
         let userInput = NSTextField(frame: NSRect(x: 0, y: 20, width: 200, height: 24))
 
@@ -65,7 +64,12 @@ class ViewController: NSViewController {
             filename_field.stringValue = "User chose to manually input a generator"
             return ("\(userInput.stringValue)")
         } else {
-            return ("No generator given")
+            let alert = NSAlert.init()
+            alert.messageText = "Error"
+            alert.informativeText = "I don't know how to make pressing cancel on the last alert return to where I want it to so for now it will lead to this alert which will quit the app. Will fix eventually =) Please just re-open the app and not press cancel at that stage"
+            alert.addButton(withTitle: "Quit")
+            alert.runModal()
+            exit(5)
         }
         
     }
