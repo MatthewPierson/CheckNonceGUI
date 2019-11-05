@@ -27,7 +27,7 @@ Place the .app into "/Applications" and run it from there. ~~If that's too compl
 
 `sudo open /Applications/CheckNonceGUI.app/Contents/MacOS/CheckNonceGUI`
 
-This will allow you to see what is happening when the app is launched and for you to take a screen shot of the output in the terminal window that this command opens.
+This will allow you to see what is happening when the app is launched and for you to take a screen shot of the output in the terminal window that this command opens to send to me so I can help fix the issue.
 
 ## Device Support
 
@@ -71,3 +71,10 @@ iPad Pro (12.9 Inch 2nd Gen) (Need firmware keys)
 [My reddit account](https://www.reddit.com/user/_Matty "My reddit account")
 
 [My github](https://www.github.com/MatthewPierson "My github")
+
+
+## Credits
+
+Me =)
+
+Kare Morstol (kareman) - [SwiftShell](https://github.com/kareman/SwiftShell "SwiftShell")
