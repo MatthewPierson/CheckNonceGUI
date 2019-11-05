@@ -22,8 +22,12 @@ Place the .app into "/Applications" and run it from there. ~~If that's too compl
 
 ## Issues
 
-- If the app gives an error about being damaged please run - "xattr -cr /Applications/checkm8.app" and try again. 
-- If the app doesn't run, try opening a terminal window and running - "sudo open /Applications/CheckNonceGUI.app/Contents/MacOS/CheckNonceGUI". This will allow you to see what is happening when the app is launched and for you to take a screen shot of the output in the terminal window that this command opens.
+- If the app gives an error about being damaged please run - 'xattr -cr /Applications/checkm8.app' and try again. 
+- If the app doesn't run, try opening a terminal window and running - 
+
+'sudo open /Applications/CheckNonceGUI.app/Contents/MacOS/CheckNonceGUI'
+
+This will allow you to see what is happening when the app is launched and for you to take a screen shot of the output in the terminal window that this command opens.
 
 ## Device Support
 
