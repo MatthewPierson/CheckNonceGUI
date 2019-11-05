@@ -234,9 +234,12 @@
 		48FD0B57236CF1EA00BFAFFE /* ibss.iPhone9,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */; };
 		48FD0B58236CF1EA00BFAFFE /* pwn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A84236CF1E900BFAFFE /* pwn.sh */; };
 		48FD0BEE236CF1EA00BFAFFE /* rec.sh in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0B2E236CF1EA00BFAFFE /* rec.sh */; };
+		5DD28792F308E49F88CCD4EE /* Pods_CheckNonceGUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9F70454268672D4E400E14 /* Pods_CheckNonceGUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9F70454268672D4E400E14 /* Pods_CheckNonceGUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckNonceGUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		378DA92CAEB90FCF365A2AF5 /* Pods-CheckNonceGUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckNonceGUI.debug.xcconfig"; path = "Target Support Files/Pods-CheckNonceGUI/Pods-CheckNonceGUI.debug.xcconfig"; sourceTree = "<group>"; };
 		48F6592B236D447F008BF2D7 /* alloc8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = alloc8.py; sourceTree = "<group>"; };
 		48F6592C236D447F008BF2D7 /* checkm8.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = checkm8.pyc; sourceTree = "<group>"; };
 		48F6592F236D447F008BF2D7 /* checkm8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = checkm8.py; sourceTree = "<group>"; };
@@ -467,6 +470,7 @@
 		48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone9,1.img4"; sourceTree = "<group>"; };
 		48FD0A84236CF1E900BFAFFE /* pwn.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = pwn.sh; sourceTree = "<group>"; };
 		48FD0B2E236CF1EA00BFAFFE /* rec.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = rec.sh; sourceTree = "<group>"; };
+		6D9E1DCC72E91566A68308B5 /* Pods-CheckNonceGUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckNonceGUI.release.xcconfig"; path = "Target Support Files/Pods-CheckNonceGUI/Pods-CheckNonceGUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,12 +480,23 @@
 			files = (
 				48F65A94236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib in Frameworks */,
 				48F65A2E236D4480008BF2D7 /* libusb-1.0.22.mojave.bottle.dylib in Frameworks */,
+				5DD28792F308E49F88CCD4EE /* Pods_CheckNonceGUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27276CD63DA9D6243775886C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				378DA92CAEB90FCF365A2AF5 /* Pods-CheckNonceGUI.debug.xcconfig */,
+				6D9E1DCC72E91566A68308B5 /* Pods-CheckNonceGUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		48F6592A236D447F008BF2D7 /* ipwndfu */ = {
 			isa = PBXGroup;
 			children = (
@@ -783,6 +798,8 @@
 			children = (
 				48FD083F236CD75500BFAFFE /* CheckNonceGUI */,
 				48FD083E236CD75500BFAFFE /* Products */,
+				27276CD63DA9D6243775886C /* Pods */,
+				9263DD36ED3E283FB146735A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -862,6 +879,14 @@
 			path = files;
 			sourceTree = "<group>";
 		};
+		9263DD36ED3E283FB146735A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F70454268672D4E400E14 /* Pods_CheckNonceGUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -869,9 +894,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48FD0863236CD75700BFAFFE /* Build configuration list for PBXNativeTarget "CheckNonceGUI" */;
 			buildPhases = (
+				E6C9BD37C5AB8B8561E1815F /* [CP] Check Pods Manifest.lock */,
 				48FD0839236CD75500BFAFFE /* Sources */,
 				48FD083A236CD75500BFAFFE /* Frameworks */,
 				48FD083B236CD75500BFAFFE /* Resources */,
+				49E95834D036B878E578294E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1146,6 +1173,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49E95834D036B878E578294E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckNonceGUI/Pods-CheckNonceGUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckNonceGUI/Pods-CheckNonceGUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckNonceGUI/Pods-CheckNonceGUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C9BD37C5AB8B8561E1815F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckNonceGUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48FD0839236CD75500BFAFFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1287,6 +1356,7 @@
 		};
 		48FD0864236CD75700BFAFFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378DA92CAEB90FCF365A2AF5 /* Pods-CheckNonceGUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CheckNonceGUI/CheckNonceGUI.entitlements;
@@ -1332,6 +1402,7 @@
 		};
 		48FD0865236CD75700BFAFFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9E1DCC72E91566A68308B5 /* Pods-CheckNonceGUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CheckNonceGUI/CheckNonceGUI.entitlements;

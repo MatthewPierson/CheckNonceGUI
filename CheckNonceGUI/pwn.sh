@@ -135,7 +135,7 @@ if [ -z "$device" ]
 then
     echo "Either unsupported device or no device found."
     echo "Exiting.."
-    exit
+    exit 1
 else
     echo "Supported device found."
 fi
@@ -172,3 +172,4 @@ fi
 cd ..
 
 echo "Device is now in PWNDFU mode with signature checks removed (Thanks to Linus Henze & akayn)"
+exit

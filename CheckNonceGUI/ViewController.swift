@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftShell
 
 class ViewController: NSViewController {
 
@@ -32,6 +33,8 @@ class ViewController: NSViewController {
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
+    
+        
     }
     
     @IBAction func browseFile(sender: AnyObject) {
@@ -61,23 +64,42 @@ class ViewController: NSViewController {
             print("Why'd you cancel me =(")
             let path = "Why'd you cancel me =("
             filename_field.stringValue = path
+            apnonce_field.stringValue = ""
             return
         }
         
     }
    
-    func irecoveryStuff(argu: String) {
+    func irecoveryStuff(argu: String) -> Bool {
         
-        let process = Process()
-        process.executableURL = URL(fileURLWithPath:"/Applications/CheckNonceGUI.app/Contents/Resources/irecovery")
-        process.arguments = ["\(argu)"]
-        process.terminationHandler = { (process) in
-           print("\ndidFinish: \(!process.isRunning)")
-        print("did \(argu)")
+        
+        let alert = NSAlert.init()
+        let test = try? runAndPrint("/Applications/CheckNonceGUI.app/Contents/Resources/irecovery", "\(argu)")
+        if test != nil {
+            print("Worked")
+            alert.messageText = "irecovery"
+            alert.informativeText = "Device succeded with \(argu) command."
+            alert.runModal()
+            print("Entered PWNDFU mode")
+            return true
+        } else {
+            print("Get fucked")
+            alert.messageText = "irecovery"
+            alert.informativeText = "Something went wrong and irecovery failed on 'irecovery \(argu)' command. Please re-enter DFU mode and try again from the beginning."
+            alert.runModal()
+            print("Gave error")
+            return false
         }
-        do {
-          try process.run()
-        } catch {}
+//        let process = Process()
+//        process.executableURL = URL(fileURLWithPath:"/Applications/CheckNonceGUI.app/Contents/Resources/irecovery")
+//        process.arguments = ["\(argu)"]
+//        process.terminationHandler = { (process) in
+//           print("\ndidFinish: \(!process.isRunning)")
+//        print("did \(argu)")
+//        }
+//        do {
+//          try process.run()
+//        } catch {}
     }
     
     func getGenerator(shshPath: String) -> String {
@@ -90,7 +112,7 @@ class ViewController: NSViewController {
                     let resourceFileDictionary = NSDictionary(contentsOfFile: shshPath)
                     let s = resourceFileDictionary?.object(forKey: "generator")
                     guard let finalGenerator: String = resourceFileDictionary?.object(forKey: "generator") as? String else {
-                        return "null"
+                        return ""
                     }
                     
                 } else {
@@ -100,7 +122,8 @@ class ViewController: NSViewController {
                     alert.informativeText = "No generator found. Please pick an SHSH file with a generator."
                     alert.addButton(withTitle: "Go Back")
                     alert.runModal()
-                    return "null"
+                    filename_field.stringValue = "Please choose a valid SHSH file..."
+                    return ""
                 }
             } catch {
                 print("Couldn't find shsh")
@@ -130,18 +153,22 @@ class ViewController: NSViewController {
     @IBAction func setGenerator(_ sender: NSButton) {
         
         print("Entering recovery mode")
-        let path = "/bin/sh"
-        let arguments = ["/Applications/CheckNonceGUI.app/Contents/Resources/rec.sh"]
-        sender.isEnabled = false
-        let task = Process.launchedProcess(launchPath: path, arguments: arguments)
-        task.waitUntilExit()
-        sender.isEnabled = true
         let alert = NSAlert.init()
-        alert.messageText = "iRecovery"
-        alert.informativeText = "iRecovery stuff should be done"
-        alert.addButton(withTitle: "Continue")
-        alert.runModal()
-        print("Entered recovery mode")
+        let test = try? runAndPrint("/bin/sh", "/Applications/CheckNonceGUI.app/Contents/Resources/rec.sh")
+        if test != nil {
+            print("Worked")
+            alert.messageText = "irecovery"
+            alert.informativeText = "Device is now in pwndrec mode."
+            alert.runModal()
+            print("Entered PWNDFU mode")
+        } else {
+            print("Get fucked")
+            alert.messageText = "irecovery"
+            alert.informativeText = "Something went wrong and irecovery failed. Please re-enter DFU mode and try again from the beginning."
+            alert.runModal()
+            print("Gave error")
+            return
+        }
         print("Getting generator from SHSH ")
         let shshLocation = filename_field.stringValue
         
@@ -153,36 +180,45 @@ class ViewController: NSViewController {
             print("Your generator is: \(finalgenerator)")
         }
         apnonce_field.stringValue = finalgenerator
-        irecoveryStuff(argu: "-c \"setenv com.apple.System.boot-nonce \(finalgenerator)\"")
-        alert.messageText = "iRecovery stuff pt2"
-        alert.informativeText = "Set generator"
-        alert.runModal()
-        sleep(5)
-        irecoveryStuff(argu: "-c saveenv")
-        
-        alert.messageText = "iRecovery stuff pt2"
-        alert.informativeText = "Saved environment"
-        alert.runModal()
-        sleep(3)
-        irecoveryStuff(argu: "-c setenv auto-boot false")
-        
-        alert.messageText = "iRecovery stuff pt2"
-        alert.informativeText = "Set Auto-boot to false"
-        alert.runModal()
-        sleep(3)
-        irecoveryStuff(argu: "-c saveenv")
-       
-        
-        alert.messageText = "iRecovery stuff pt2"
-        alert.informativeText = "Saved environment"
-        alert.runModal()
-        sleep(3)
-        irecoveryStuff(argu: "-c reset")
-
-        
-        alert.messageText = "iRecovery stuff pt2"
-        alert.informativeText = "All done! Device will now reboot into recovery mode with the correct APNonce"
-        alert.runModal()
+        var irec1 = irecoveryStuff(argu: "-c \"setenv com.apple.System.boot-nonce \(finalgenerator)\"")
+        if irec1 == true {
+            alert.messageText = "iRecovery stuff pt2"
+            alert.informativeText = "Set generator"
+            alert.runModal()
+            sleep(5)
+            var irec2 = irecoveryStuff(argu: "-c saveenv")
+            if irec2 == true {
+                alert.messageText = "iRecovery stuff pt2"
+                alert.informativeText = "Saved environment"
+                alert.runModal()
+                sleep(3)
+                var rec3 = irecoveryStuff(argu: "-c setenv auto-boot false")
+                if rec3 == true {
+                    alert.messageText = "iRecovery stuff pt2"
+                    alert.informativeText = "Set Auto-boot to false"
+                    alert.runModal()
+                    sleep(3)
+                    var irec4 = irecoveryStuff(argu: "-c saveenv")
+                    if irec4 == true {
+                        alert.messageText = "iRecovery stuff pt2"
+                        alert.informativeText = "Saved environment"
+                        alert.runModal()
+                        sleep(3)
+                        var irec5 = irecoveryStuff(argu: "-c reset")
+                        if irec5 == true {
+                            alert.messageText = "iRecovery stuff pt2"
+                            alert.informativeText = "All done! Device will now reboot into recovery mode with the correct APNonce"
+                            alert.runModal()
+                        }
+                    else {print("errored on restarting device")}
+                    }
+                else {print("errored on saving environment the second time")}
+                }
+            else {print("errored on setting auto-boot to false")}
+            }
+        else {print("errored on saving envirnoment")}
+        }
+    else {print("errored on setting generator")}
     }
     
     @IBAction func enterPWNDFUMode(_ sender: NSButton) {
@@ -193,19 +229,23 @@ class ViewController: NSViewController {
         alert.addButton(withTitle: "Continue")
         alert.runModal()
         
-        print("Entering PWNDFU mode")
-        let path = "/bin/sh"
-        let arguments = ["/Applications/CheckNonceGUI.app/Contents/Resources/pwn.sh"]
-        sender.isEnabled = false
-        let task = Process.launchedProcess(launchPath: path, arguments: arguments)
-        task.waitUntilExit()
-        sender.isEnabled = true
-        alert.messageText = "ipwndfu"
-        alert.informativeText = "Device is now in PWNDFU mode."
-        alert.runModal()
-        print("Entered PWNDFU mode")
+        let test = try? runAndPrint("/bin/sh", "/Applications/CheckNonceGUI.app/Contents/Resources/pwn.sh")
+        if test != nil {
+            print("Worked")
+            alert.messageText = "ipwndfu"
+            alert.informativeText = "Device is now in PWNDFU mode."
+            alert.runModal()
+            print("Entered PWNDFU mode")
+        } else {
+            print("Get fucked")
+            alert.messageText = "ipwndfu"
+            alert.informativeText = "Something went wrong and ipwndfu failed. Please re-enter DFU mode and try again."
+            alert.runModal()
+            print("Gave error")
+        }
+            
     }
-    
+
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.

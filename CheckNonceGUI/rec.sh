@@ -133,7 +133,7 @@ if [ -z "$device" ]
 then
     echo "Either unsupported device or no device found."
     echo "Exiting.."
-    exit
+    exit 1
 else
     echo "Supported device found."
 fi
@@ -148,3 +148,4 @@ then
 fi
 
 echo "Ready for nonce =)"
+exit 0
