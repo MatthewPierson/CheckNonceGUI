@@ -11,7 +11,7 @@ Place the .app into "/Applications" and run it from there. ~~If that's too compl
 2. Open the xcode workspace (CheckNonceGUI.xcworkspace)
 3. Add your Apple ID for signing
 4. Run
-5. Build and copy over the .app from wherever it is in "~/Library/Developer/Xcode/DerivedData" to "/Applications"
+5. Build and copy over the .app from wherever it is in "~/Library/Developer/Xcode/DerivedData" to "/Applications" (You don't HAVE to do this but the app won't be able to do ipwndfu/irecovery stuff, making it basically useless until it is in the correct location)
 6. Do whatever you want =)
 
 ## Running the app
@@ -20,10 +20,17 @@ Place the .app into "/Applications" and run it from there. ~~If that's too compl
 2. Move the .app to "/Applications"
 3. Run the app
 
+The app has only been tested and confirmed to work on Mojave, it should work fine on Catalina but High Sierra and lower I don't know and can't be bothered testing at this stage.
+
 ## Issues
 
-- If the app gives an error about being damaged please run - `xattr -cr /Applications/checkm8.app` and try again. 
-- If the app doesn't run, try opening a terminal window and running - 
+- If the app gives an error about being damaged please run - 
+
+`xattr -cr /Applications/checkm8.app` 
+
+And try again. 
+
+- If the app doesn't run at all, try opening a terminal window and running - 
 
 `sudo open /Applications/CheckNonceGUI.app/Contents/MacOS/CheckNonceGUI`
 
