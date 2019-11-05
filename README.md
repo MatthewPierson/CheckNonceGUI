@@ -5,6 +5,21 @@ GUI for my Checkm8 based APNonce Setter. This is a very simple swift app that wi
 ## Usage
 Place the .app into "/Applications" and run it from there. 
 
+## Building the project
+
+1. Clone the repo
+2. Open the xcode workspace (CheckNonceGUI.xcworkspace)
+3. Add your Apple ID for signing
+4. Run
+5. Build and copy over the .app from wherever it is in "~/Library/Developer/Xcode/DerivedData" to "/Applications"
+6. Do whatever you want =)
+
+## Running the app
+
+1. Download latest release
+2. Move the .app to "/Applications"
+3. Run the app
+
 ## Device Support
 
 iPhone 5s
@@ -39,23 +54,10 @@ iPad Pro (10.5 Inch) (Need firmware keys)
 
 iPad Pro (12.9 Inch 2nd Gen) (Need firmware keys)
 
-## Building the project
-
-1. Clone the repo
-2. Open the xcode workspace (CheckNonceGUI.xcworkspace)
-3. Add your Apple ID for signing
-4. Run
-5. Build and copy over the .app from wherever it is in "~/Library/Developer/Xcode/DerivedData" to "/Applications"
-6. Do whatever you want =)
-
-## Running the app
-
-1. Download latest release
-2. Move the .app to "/Applications"
-3. Run the app
-
 ## Me and my stuff
 
 [My twitter](https://www.twitter.com/mosk_i "My twitter")
+
 [My reddit account](https://www.reddit.com/user/_Matty "My reddit account")
+
 [My github](https://www.github.com/MatthewPierson "My github")
