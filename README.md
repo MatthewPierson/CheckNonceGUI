@@ -30,7 +30,7 @@ iPhone 7 Plus
 
 iPhone X
 
-
+------------------------------------------
 <br/>
 
 iPad Air 1
@@ -43,6 +43,7 @@ iPad Mini 3
 
 iPad 7th Gen (2019) (Thanks to @RazMashat on twitter for keys =) )
 
+------------------------------------------
 <br/>
 
 iPod Touch 7th Gen (2019)
