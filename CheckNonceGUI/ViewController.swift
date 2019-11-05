@@ -20,7 +20,7 @@ class ViewController: NSViewController {
             print("Did not find CheckNonceGUI.app in /Applications")
             let alert = NSAlert.init()
             alert.messageText = "Error"
-            alert.informativeText = "Please place or copy CheckNonceGUI.app to '/Applications' and run it from there."
+            alert.informativeText = "Please place or copy CheckNonceGUI.app to \n'/Applications' and run it from there."
             alert.addButton(withTitle: "Quit")
             alert.runModal()
             exit(1)
@@ -34,42 +34,94 @@ class ViewController: NSViewController {
     
     @IBAction func helpButton(_ sender: NSButton) {
         let alert = NSAlert.init()
-        alert.messageText = "Version 0.5.1"
+        alert.messageText = "Version 0.5.2"
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
     }
     
-    @IBAction func browseFile(sender: AnyObject) {
-        
-        let dialog = NSOpenPanel();
-        
-        dialog.title                   = "Choose a .shsh or .shsh2 file";
-        dialog.showsResizeIndicator    = true;
-        dialog.showsHiddenFiles        = false;
-        dialog.canChooseDirectories    = false;
-        dialog.canCreateDirectories    = false;
-        dialog.allowsMultipleSelection = false;
-        dialog.allowedFileTypes        = ["shsh2", "shsh"];
+    func manualGenerator() -> String {
+    
+        let alert = NSAlert()
+        alert.messageText = "Input Generator"
+        alert.informativeText = "Please input a valid generator, must be 0x then 16 characters. E.G '0x1111111111111111'"
+        alert.alertStyle = .warning
 
-        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
-            let result = dialog.url
+        alert.addButton(withTitle: "Set generator")
+        alert.addButton(withTitle: "Cancel")
+        
+        let userInput = NSTextField(frame: NSRect(x: 0, y: 20, width: 200, height: 24))
+
+        let stackViewer = NSStackView(frame: NSRect(x: 0, y: 0, width: 200, height: 58))
+
+        stackViewer.addSubview(userInput)
+
+        alert.accessoryView = stackViewer
+
+        let response: NSApplication.ModalResponse = alert.runModal()
+        if (response == NSApplication.ModalResponse.alertFirstButtonReturn) {
             
-            if (result != nil) {
-                let path = result!.path
-                filename_field.stringValue = path
-                print("SHSH location is:", path)
-                var finalgenerator = getGenerator(shshPath: path)
-                apnonce_field.stringValue = finalgenerator
-            }
-            
+            apnonce_field.stringValue = "\(userInput.stringValue)"
+            filename_field.stringValue = "User chose to manually input a generator"
+            return ("\(userInput.stringValue)")
         } else {
-            print("Why'd you cancel me =(")
-            filename_field.stringValue = "Why'd you cancel me =("
-            apnonce_field.stringValue = ""
-            return
+            return ("No generator given")
         }
         
+    }
+    
+    
+    @IBAction func browseFile(sender: AnyObject) {
+       
+       
+       func dialogOKCancel(question: String, text: String) -> Bool {
+            let alert = NSAlert()
+            alert.messageText = question
+            alert.informativeText = text
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: "Yes")
+            alert.addButton(withTitle: "No")
+            return alert.runModal() == .alertFirstButtonReturn
+        }
+
+        let answer = dialogOKCancel(question: "Do you want the app to automatically get the correct generator from the SHSH you are about to select?", text: "If not then press 'No' and read the instructions.")
+        if answer == true {
+        
+        
+            let dialog = NSOpenPanel();
+        
+            dialog.title                   = "Choose a .shsh or .shsh2 file";
+            dialog.showsResizeIndicator    = true;
+            dialog.showsHiddenFiles        = false;
+            dialog.canChooseDirectories    = false;
+            dialog.canCreateDirectories    = false;
+            dialog.allowsMultipleSelection = false;
+            dialog.allowedFileTypes        = ["shsh2", "shsh"];
+
+            if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+                let result = dialog.url
+            
+                if (result != nil) {
+                    let path = result!.path
+                    filename_field.stringValue = path
+                    print("SHSH location is:", path)
+                    var finalgenerator = getGenerator(shshPath: path)
+                    apnonce_field.stringValue = finalgenerator
+                }
+            
+            } else {
+                print("Why'd you cancel me =(")
+                filename_field.stringValue = "Why'd you cancel me =("
+                apnonce_field.stringValue = ""
+                return
+            }
+        } else {
+            let alert = NSAlert.init()
+            alert.messageText = "Manual Generator"
+            alert.informativeText = "Please press 'Enter PWNREC mode and set generator' and input a generator when prompted. If you don't enter a valid generator then your APNonce will not be set to what it needs to be"
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
     }
    
     func irecoveryStuff(argu: String) -> Bool {
@@ -118,11 +170,20 @@ class ViewController: NSViewController {
                 }
             } catch {
                 print("Couldn't find shsh")
-                let alert = NSAlert.init()
-                alert.messageText = "Error"
-                alert.informativeText = "No SHSH selected. Please locate your SHSH file and try again"
-                alert.addButton(withTitle: "Go Back")
-                alert.runModal()
+                var finalGenerator = manualGenerator()
+                if finalGenerator == "" {
+                    print("Blank generator, defaulting to '0x1111111111111111' ")
+                    let alert = NSAlert.init()
+                    alert.messageText = "Why'd you input a blank generator????"
+                    alert.informativeText = "Blank generator entered. Defaulting to '0x1111111111111111'."
+                    alert.addButton(withTitle: "OK")
+                    alert.runModal()
+                    finalGenerator = "0x1111111111111111"
+                    return (finalGenerator)
+                } else{
+                    return (finalGenerator)
+                }
+                
                
             }
         } else {
