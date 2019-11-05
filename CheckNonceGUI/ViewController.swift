@@ -10,13 +10,22 @@ import Cocoa
 import SwiftShell
 
 class ViewController: NSViewController {
-
-    var path = ("null")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let fm = FileManager()
+        if fm.fileExists(atPath: "/Applications/CheckNonceGUI.app") {
+            print("Found CheckNonceGUI.app in /Applications")
+        } else {
+            print("Did not find CheckNonceGUI.app in /Applications")
+            let alert = NSAlert.init()
+            alert.messageText = "Error"
+            alert.informativeText = "Please place or copy CheckNonceGUI.app to '/Applications' and run it from there."
+            alert.addButton(withTitle: "Quit")
+            alert.runModal()
+            exit(1)
+        }
         view.window?.level = .floating
-        
     }
     
     @IBOutlet weak var filename_field: NSTextField!
@@ -25,12 +34,10 @@ class ViewController: NSViewController {
     
     @IBAction func helpButton(_ sender: NSButton) {
         let alert = NSAlert.init()
-        alert.messageText = "Version 0.5.0"
+        alert.messageText = "Version 0.5.1"
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
-    
-        
     }
     
     @IBAction func browseFile(sender: AnyObject) {
@@ -58,8 +65,7 @@ class ViewController: NSViewController {
             
         } else {
             print("Why'd you cancel me =(")
-            let path = "Why'd you cancel me =("
-            filename_field.stringValue = path
+            filename_field.stringValue = "Why'd you cancel me =("
             apnonce_field.stringValue = ""
             return
         }
