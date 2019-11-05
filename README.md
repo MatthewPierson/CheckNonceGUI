@@ -3,7 +3,7 @@
 GUI for my Checkm8 based APNonce Setter. This is a very simple swift app that will place your device into PWNDFU mode using ipwndfu/checkm8, let the user pick a valid previously saved SHSH file and grab the generator from it, place the device into PWNDREC mode and set the generator to that found in the SHSH file. This allows for downgrades/upgrades to unsiged iOS versions for compatible devices, limited to versions with a signed compatible SEP/Baseband for now. 
 
 ## Usage
-Place the .app into "/Applications" and run it from there. 
+Place the .app into "/Applications" and run it from there. ~~If that's too complicated for you then I don't know what to say~~
 
 ## Building the project
 
@@ -19,6 +19,11 @@ Place the .app into "/Applications" and run it from there.
 1. Download latest release
 2. Move the .app to "/Applications"
 3. Run the app
+
+## Issues
+
+- If the app gives an error about being damaged please run - "xattr -cr /Applications/checkm8.app" and try again. 
+- If the app doesn't run, try opening a terminal window and running - "sudo open /Applications/CheckNonceGUI.app/Contents/MacOS/CheckNonceGUI". This will allow you to see what is happening when the app is launched and for you to take a screen shot of the output in the terminal window that this command opens.
 
 ## Device Support
 

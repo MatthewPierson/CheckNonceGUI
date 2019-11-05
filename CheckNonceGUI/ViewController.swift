@@ -16,11 +16,6 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.window?.level = .floating
-        let alert = NSAlert.init()
-        alert.messageText = "Information"
-        alert.informativeText = "Press OK to continue to the app\n\nAPP MUST BE INSTALLED TO '/Applications' !!! IF IT IS NOT INSTALLED THERE, CLOSE THE APP AND MOVE IT THERE\n\nPlease try using your brain before you spam me on twitter/github/discord asking stupid questions."
-        alert.addButton(withTitle: "OK")
-        alert.runModal()
         
     }
     
@@ -215,7 +210,7 @@ class ViewController: NSViewController {
         
         let alert = NSAlert.init()
         alert.messageText = "IMPORTANT"
-        alert.informativeText = "Please make sure you are in DFU mode before pressing continue.\n\nipwndfu will loop until it puts the device in PWNDFU mode so just keep trying whenever the device reboots."
+        alert.informativeText = "Please make sure you are in DFU mode before pressing continue, that the .app is installed to\n'/Applications' and that you are using a compatible device.\n\nipwndfu will loop until it puts the device in PWNDFU mode so just keep trying whenever the device reboots."
         alert.addButton(withTitle: "Continue")
         alert.runModal()
         
@@ -236,7 +231,6 @@ class ViewController: NSViewController {
     }
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
         }
     }
 }

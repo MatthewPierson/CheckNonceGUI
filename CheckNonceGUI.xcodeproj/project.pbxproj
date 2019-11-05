@@ -1358,7 +1358,7 @@
 			baseConfigurationReference = 378DA92CAEB90FCF365A2AF5 /* Pods-CheckNonceGUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3E68U2UV9Z;
@@ -1405,7 +1405,7 @@
 			baseConfigurationReference = 6D9E1DCC72E91566A68308B5 /* Pods-CheckNonceGUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3E68U2UV9Z;
