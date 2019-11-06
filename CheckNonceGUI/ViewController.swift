@@ -28,13 +28,63 @@ class ViewController: NSViewController {
         view.window?.level = .floating
     }
     
+    @IBAction func verifyAPNONCE(_ sender: NSButton) {
+        print("Do stuff here ty")
+
+        let test = apnonceStuff(argu: filename_field.stringValue)
+        if test == true {
+            print("sweet")
+        } else if test == false {
+            print("welp something didnt work")
+        }
+            
+    }
+    
+    @IBAction func exitRecMode(_ sender: NSButton) {
+        
+        var exit = irecoveryCommands(argu: "-n")
+        
+        if exit == true {
+            let alert = NSAlert.init()
+            alert.messageText = "iRecovery"
+            alert.informativeText = "Device is now exiting recovery mode and rebooting."
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        } else {
+            print("You messed up somehow G1")
+        }
+        
+    }
+    
+    func apnonceStuff(argu: String) -> Bool {
+        
+            print("Do stuff here ty")
+            let alert = NSAlert()
+            let shshPathNonce = filename_field.stringValue
+            let test = try? runAndPrint("/Applications/CheckNonceGUI.app/Contents/Resources/verify.sh", "\(argu)")
+            if test != nil {
+                print("Worked")
+                alert.messageText = "APNonce Verification"
+                alert.informativeText = "Device APNonce verified to match that found in SHSH."
+                alert.runModal()
+                return true
+            } else {
+                print("why tho")
+                alert.messageText = "APNonce Verification"
+                alert.informativeText = "Device APNonce did NOT pass verification. Please try the whole process again and re-verify."
+                alert.runModal()
+                print("Gave error")
+                return false
+            }
+        }
+    
     @IBOutlet weak var filename_field: NSTextField!
     
     @IBOutlet weak var apnonce_field: NSTextField!
     
     @IBAction func helpButton(_ sender: NSButton) {
         let alert = NSAlert.init()
-        alert.messageText = "Version 0.5.3"
+        alert.messageText = "Version 0.6.0"
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
@@ -125,23 +175,25 @@ class ViewController: NSViewController {
             alert.informativeText = "Please press 'Enter PWNREC mode and set generator' and input a generator when prompted. If you don't enter a valid generator then your APNonce will not be set to what it needs to be"
             alert.addButton(withTitle: "OK")
             alert.runModal()
+            filename_field.stringValue = "If you get this string then well done, you win a whole load of nothing."
+            apnonce_field.stringValue = ""
         }
     }
    
-    func irecoveryStuff(argu: String) -> Bool {
+    func irecoveryCommands(argu: String) -> Bool {
         
         let alert = NSAlert.init()
         let test = try? runAndPrint("/Applications/CheckNonceGUI.app/Contents/Resources/irecovery", "\(argu)")
         if test != nil {
             print("Worked")
-            alert.messageText = "irecovery"
+            alert.messageText = "iRecovery"
             alert.informativeText = "Device succeded with \(argu) command."
             alert.runModal()
             print("Entered PWNDFU mode")
             return true
         } else {
-            print("Get fucked")
-            alert.messageText = "irecovery"
+            print("why tho")
+            alert.messageText = "iRecovery"
             alert.informativeText = "Something went wrong and irecovery failed on 'irecovery \(argu)' command. Please re-enter DFU mode and try again from the beginning."
             alert.runModal()
             print("Gave error")
@@ -218,7 +270,7 @@ class ViewController: NSViewController {
             alert.runModal()
             print("Entered PWNDFU mode")
         } else {
-            print("Get fucked")
+            print("why tho")
             alert.messageText = "irecovery"
             alert.informativeText = "Something went wrong and irecovery failed. Please re-enter DFU mode and try again from the beginning."
             alert.runModal()
@@ -236,31 +288,31 @@ class ViewController: NSViewController {
             print("Your generator is: \(finalgenerator)")
         }
         apnonce_field.stringValue = finalgenerator
-        var irec1 = irecoveryStuff(argu: "-c setenv com.apple.System.boot-nonce \(finalgenerator)")
+        var irec1 = irecoveryCommands(argu: "-c setenv com.apple.System.boot-nonce \(finalgenerator)")
         if irec1 == true {
             alert.messageText = "iRecovery stuff pt2"
             alert.informativeText = "Set generator"
             alert.runModal()
             sleep(5)
-            var irec2 = irecoveryStuff(argu: "-c saveenv")
+            var irec2 = irecoveryCommands(argu: "-c saveenv")
             if irec2 == true {
                 alert.messageText = "iRecovery stuff pt2"
                 alert.informativeText = "Saved environment"
                 alert.runModal()
                 sleep(3)
-                var rec3 = irecoveryStuff(argu: "-c setenv auto-boot false")
+                var rec3 = irecoveryCommands(argu: "-c setenv auto-boot false")
                 if rec3 == true {
                     alert.messageText = "iRecovery stuff pt2"
                     alert.informativeText = "Set Auto-boot to false"
                     alert.runModal()
                     sleep(3)
-                    var irec4 = irecoveryStuff(argu: "-c saveenv")
+                    var irec4 = irecoveryCommands(argu: "-c saveenv")
                     if irec4 == true {
                         alert.messageText = "iRecovery stuff pt2"
                         alert.informativeText = "Saved environment"
                         alert.runModal()
                         sleep(3)
-                        var irec5 = irecoveryStuff(argu: "-c reset")
+                        var irec5 = irecoveryCommands(argu: "-c reset")
                         if irec5 == true {
                             alert.messageText = "iRecovery stuff pt2"
                             alert.informativeText = "All done! Device will now reboot into recovery mode with the correct APNonce"
@@ -293,7 +345,7 @@ class ViewController: NSViewController {
             alert.runModal()
             print("Entered PWNDFU mode")
         } else {
-            print("Get fucked")
+            print("why tho")
             alert.messageText = "ipwndfu"
             alert.informativeText = "Something went wrong and ipwndfu failed. Please re-enter DFU mode and try again."
             alert.runModal()

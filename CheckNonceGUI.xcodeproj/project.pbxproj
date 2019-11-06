@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480CE53523729308007212BD /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 480CE53423729308007212BD /* verify.sh */; };
+		480CE537237293D4007212BD /* img4tool in Resources */ = {isa = PBXBuildFile; fileRef = 480CE536237293D4007212BD /* img4tool */; };
 		48F65A0B236D4480008BF2D7 /* alloc8.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6592B236D447F008BF2D7 /* alloc8.py */; };
 		48F65A0C236D4480008BF2D7 /* checkm8.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 48F6592C236D447F008BF2D7 /* checkm8.pyc */; };
 		48F65A0E236D4480008BF2D7 /* checkm8.py in Resources */ = {isa = PBXBuildFile; fileRef = 48F6592F236D447F008BF2D7 /* checkm8.py */; };
@@ -240,6 +242,8 @@
 /* Begin PBXFileReference section */
 		0A9F70454268672D4E400E14 /* Pods_CheckNonceGUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckNonceGUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		378DA92CAEB90FCF365A2AF5 /* Pods-CheckNonceGUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckNonceGUI.debug.xcconfig"; path = "Target Support Files/Pods-CheckNonceGUI/Pods-CheckNonceGUI.debug.xcconfig"; sourceTree = "<group>"; };
+		480CE53423729308007212BD /* verify.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		480CE536237293D4007212BD /* img4tool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = img4tool; sourceTree = "<group>"; };
 		48F6592B236D447F008BF2D7 /* alloc8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = alloc8.py; sourceTree = "<group>"; };
 		48F6592C236D447F008BF2D7 /* checkm8.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = checkm8.pyc; sourceTree = "<group>"; };
 		48F6592F236D447F008BF2D7 /* checkm8.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = checkm8.py; sourceTree = "<group>"; };
@@ -813,6 +817,7 @@
 		48FD083F236CD75500BFAFFE /* CheckNonceGUI */ = {
 			isa = PBXGroup;
 			children = (
+				480CE53423729308007212BD /* verify.sh */,
 				48F6592A236D447F008BF2D7 /* ipwndfu */,
 				48F6599C236D4480008BF2D7 /* ipwndfu_public */,
 				48FD0A5A236CF1E900BFAFFE /* files */,
@@ -831,6 +836,7 @@
 		48FD0A5A236CF1E900BFAFFE /* files */ = {
 			isa = PBXGroup;
 			children = (
+				480CE536237293D4007212BD /* img4tool */,
 				48F65ADA236D4927008BF2D7 /* ipwndfu */,
 				48F65ADB236D4927008BF2D7 /* ipwndfu_public */,
 				48FD0A5B236CF1E900BFAFFE /* ibss.iPad7,6.img4 */,
@@ -965,6 +971,7 @@
 				48F65A5A236D4480008BF2D7 /* dfu.pyc in Resources */,
 				48F65AA8236D4480008BF2D7 /* libusb0.py in Resources */,
 				48F65A54236D4480008BF2D7 /* utilities.pyc in Resources */,
+				480CE537237293D4007212BD /* img4tool in Resources */,
 				48FD0B37236CF1EA00BFAFFE /* ibss.iPhone9,3.img4 in Resources */,
 				48F65A50236D4480008BF2D7 /* libloader.py in Resources */,
 				48FD0B34236CF1EA00BFAFFE /* ibss.iPhone10,6.img4 in Resources */,
@@ -1037,6 +1044,7 @@
 				48F65A23236D4480008BF2D7 /* nor.py in Resources */,
 				48FD0B36236CF1EA00BFAFFE /* ibss.iPad4,2.img4 in Resources */,
 				48F65A82236D4480008BF2D7 /* usb_0xA1_2_armv7.bin in Resources */,
+				480CE53523729308007212BD /* verify.sh in Resources */,
 				48F65A38236D4480008BF2D7 /* LICENSE in Resources */,
 				48F65AB4236D4480008BF2D7 /* README.rst in Resources */,
 				48FD0B30236CF1EA00BFAFFE /* igetnonce in Resources */,
@@ -1392,7 +1400,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.5.3;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1439,7 +1447,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.5.3;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

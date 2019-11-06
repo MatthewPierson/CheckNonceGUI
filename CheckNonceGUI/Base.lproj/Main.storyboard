@@ -112,11 +112,12 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="CheckNonceGUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="317"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQC-xl-g8c">
-                                <rect key="frame" x="170" y="138" width="140" height="32"/>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQC-xl-g8c">
+                                <rect key="frame" x="170" y="191" width="140" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Select SHSH file" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="laV-Ck-3cF">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -134,16 +135,18 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-Ys-a0q">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-Ys-a0q">
                                 <rect key="frame" x="18" y="10" width="161" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Made by @mosk_i (Matty)" id="vRB-1p-pur">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CVY-7w-YOi">
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CVY-7w-YOi">
                                 <rect key="frame" x="447" y="6" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GdL-Zi-egf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -152,8 +155,9 @@
                                     <action selector="helpButton:" target="XfG-lQ-9wD" id="EG7-wF-Q2d"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KLd-G9-edR">
-                                <rect key="frame" x="155" y="182" width="170" height="32"/>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLd-G9-edR">
+                                <rect key="frame" x="155" y="224" width="170" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Enter PWNDFU Mode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sBD-4B-3cb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -162,8 +166,9 @@
                                     <action selector="enterPWNDFUMode:" target="XfG-lQ-9wD" id="27U-x4-pfE"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyW-87-11f">
-                                <rect key="frame" x="18" y="145" width="87" height="16"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyW-87-11f">
+                                <rect key="frame" x="18" y="148" width="87" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Path to SHSH" id="kIP-fZ-9Dz">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -171,7 +176,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUQ-ty-POM">
-                                <rect key="frame" x="74" y="232" width="332" height="27"/>
+                                <rect key="frame" x="74" y="270" width="332" height="27"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Checkm8 based APNonce Setter" id="awa-qw-sqA">
                                     <font key="font" metaFont="system" size="23"/>
@@ -198,7 +203,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQx-1z-if2">
-                                <rect key="frame" x="186" y="50" width="280" height="32"/>
+                                <rect key="frame" x="100" y="158" width="280" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Enter PWNREC mode and set generator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jUG-vp-r86">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -208,17 +213,38 @@
                                     <action selector="setGenerator:" target="XfG-lQ-9wD" id="Pqi-k3-eHM"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihn-R6-CZK">
+                                <rect key="frame" x="236" y="50" width="135" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Verify APNonce" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pHM-pW-3jU">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="verifyAPNONCE:" target="XfG-lQ-9wD" id="zhR-b2-5qC"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbo-ps-aby">
+                                <rect key="frame" x="240" y="86" width="39" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Other" id="pmg-IY-DsW">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0F3-a9-WtN">
+                                <rect key="frame" x="236" y="17" width="160" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Exit Recovery Mode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jsX-1S-ZW6">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="exitRecMode:" target="XfG-lQ-9wD" id="OiR-ug-bp4"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="aW0-Ys-a0q" secondAttribute="bottom" constant="10" id="BfI-bZ-VXs"/>
-                            <constraint firstAttribute="trailing" secondItem="CVY-7w-YOi" secondAttribute="trailing" constant="10" id="E0w-xL-3WJ"/>
-                            <constraint firstItem="aW0-Ys-a0q" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="ES9-o4-Zlb"/>
-                            <constraint firstItem="KLd-G9-edR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="60" id="Ip5-Qx-MFB"/>
-                            <constraint firstItem="IQC-xl-g8c" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="aBW-TC-LNy"/>
-                            <constraint firstItem="KLd-G9-edR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="akg-aN-Wzc"/>
-                            <constraint firstItem="NyW-87-11f" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="ttU-Es-dyG"/>
-                            <constraint firstAttribute="bottom" secondItem="CVY-7w-YOi" secondAttribute="bottom" constant="10" id="yvm-ke-5he"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="apnonce_field" destination="Oew-iU-B4W" id="ndc-gc-SAa"/>
@@ -227,7 +253,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="678.5"/>
         </scene>
     </scenes>
 </document>
