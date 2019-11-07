@@ -26,7 +26,7 @@ The app has only been tested and confirmed to work on Mojave, it should work fin
 
 - If the app gives an error about being damaged please run - 
 
-`xattr -cr /Applications/checkm8.app` 
+`xattr -cr /Applications/CheckNonceGUI.app` 
 
 And try again. 
 
