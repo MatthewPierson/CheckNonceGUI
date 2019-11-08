@@ -3,7 +3,7 @@
 GUI for my Checkm8 based APNonce Setter. This is a very simple swift app that will place your device into PWNDFU mode using ipwndfu/checkm8, let the user pick a valid previously saved SHSH file and grab the generator from it, place the device into PWNDREC mode and set the generator to that found in the SHSH file. This allows for downgrades/upgrades to unsiged iOS versions for compatible devices, limited to versions with a signed compatible SEP/Baseband for now. 
 
 ## Usage
-Place the .app into "/Applications" and run it from there. ~~If that's too complicated for you then I don't know what to say~~
+As of version 0.6.1, you can run the app from any location (Thanks @tie1r on twitter!). It no longer needs to be placed in "/Applications" to work! ~~Place the .app into "/Applications" and run it from there. If that's too complicated for you then I don't know what to say~~
 
 ## Building the project
 
@@ -11,14 +11,12 @@ Place the .app into "/Applications" and run it from there. ~~If that's too compl
 2. Open the xcode workspace (CheckNonceGUI.xcworkspace)
 3. Add your Apple ID for signing
 4. Run
-5. Build and copy over the .app from wherever it is in "~/Library/Developer/Xcode/DerivedData" to "/Applications" (You don't HAVE to do this but the app won't be able to do ipwndfu/irecovery stuff, making it basically useless until it is in the correct location)
-6. Do whatever you want =)
+5. Do whatever you want =)
 
 ## Running the app
 
 1. Download latest release
-2. Move the .app to "/Applications"
-3. Run the app
+2. Run the app
 
 The app has only been tested and confirmed to work on Mojave, it should work fine on Catalina but High Sierra and lower I don't know and can't be bothered testing at this stage.
 
@@ -26,13 +24,13 @@ The app has only been tested and confirmed to work on Mojave, it should work fin
 
 - If the app gives an error about being damaged please run - 
 
-`xattr -cr /Applications/CheckNonceGUI.app` 
+`xattr -cr Path/To/CheckNonceGUI.app` 
 
 And try again. 
 
 - If the app doesn't run at all, try opening a terminal window and running - 
 
-`sudo open /Applications/CheckNonceGUI.app/Contents/MacOS/CheckNonceGUI`
+`sudo open Path/To/CheckNonceGUI.app/Contents/MacOS/CheckNonceGUI`
 
 This will allow you to see what is happening when the app is launched and for you to take a screen shot of the output in the terminal window that this command opens to send to me so I can help fix the issue.
 
