@@ -13,18 +13,6 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let fm = FileManager()
-        if fm.fileExists(atPath: "/Applications/CheckNonceGUI.app") {
-            print("Found CheckNonceGUI.app in /Applications")
-        } else {
-            print("Did not find CheckNonceGUI.app in /Applications")
-            let alert = NSAlert.init()
-            alert.messageText = "Error"
-            alert.informativeText = "Please place or copy CheckNonceGUI.app to \n'/Applications' and run it from there."
-            alert.addButton(withTitle: "Quit")
-            alert.runModal()
-            exit(1)
-        }
         view.window?.level = .floating
     }
     
@@ -42,9 +30,9 @@ class ViewController: NSViewController {
     
     @IBAction func exitRecMode(_ sender: NSButton) {
         
-        var exit = irecoveryCommands(argu: "-n")
+        var exitRec = irecoveryCommands(argu: "-n")
         
-        if exit == true {
+        if exitRec == true {
             let alert = NSAlert.init()
             alert.messageText = "iRecovery"
             alert.informativeText = "Device is now exiting recovery mode and rebooting."
@@ -58,10 +46,11 @@ class ViewController: NSViewController {
     
     func apnonceStuff(argu: String) -> Bool {
         
-            print("Do stuff here ty")
             let alert = NSAlert()
             let shshPathNonce = filename_field.stringValue
-            let test = try? runAndPrint("/Applications/CheckNonceGUI.app/Contents/Resources/verify.sh", "\(argu)")
+            let fileURL = Bundle.main.url(forResource:"verify", withExtension: "sh")
+            let filePath = fileURL?.relativePath
+            let test = try? runAndPrint("\(filePath!)", "\(argu)")
             if test != nil {
                 print("Worked")
                 alert.messageText = "APNonce Verification"
@@ -84,7 +73,7 @@ class ViewController: NSViewController {
     
     @IBAction func helpButton(_ sender: NSButton) {
         let alert = NSAlert.init()
-        alert.messageText = "Version 0.6.0"
+        alert.messageText = "Version 0.6.5"
         alert.informativeText = "Just a simple GUI for my Checkm8 Nonce Setter. Is mostly written in Swift, besides the stuff that interacts with the device as I am way too retarded to remake that in Swift. This is my first attempt at Swift so expect it to be broken and rubbish.\n\nCurrent device support is:\n\niPhone 5s, iPhone 7/7 Plus, iPhone X\niPad Mini 2, iPad Mini 3, iPad Air,\niPad 6th Gen, iPad 7th Gen\niPod Touch 7th Gen\n\nJust run each button in order and follow any prompts that pop up.\n\nIf the app looks frozen during the irecovery stuff, don't worry, it's most likely fine just freezes while it waits for irecovery to do its thing."
         alert.addButton(withTitle: "Go Back")
         alert.runModal()
@@ -116,7 +105,7 @@ class ViewController: NSViewController {
         } else {
             let alert = NSAlert.init()
             alert.messageText = "Error"
-            alert.informativeText = "I don't know how to make pressing cancel on the last alert return to where I want it to so for now it will lead to this alert which will quit the app. Will fix eventually =) Please just re-open the app and not press cancel at that stage"
+            alert.informativeText = "You won't ever get this alert unless you mess up in a way that I can't imagine =)"
             alert.addButton(withTitle: "Quit")
             alert.runModal()
             exit(5)
@@ -183,7 +172,9 @@ class ViewController: NSViewController {
     func irecoveryCommands(argu: String) -> Bool {
         
         let alert = NSAlert.init()
-        let test = try? runAndPrint("/Applications/CheckNonceGUI.app/Contents/Resources/irecovery", "\(argu)")
+        let fileURL = Bundle.main.url(forResource:"irecovery", withExtension: "")
+        let filePath = fileURL?.relativePath
+        let test = try? runAndPrint("\(filePath!)", "\(argu)")
         if test != nil {
             print("Worked")
             alert.messageText = "iRecovery"
@@ -262,7 +253,9 @@ class ViewController: NSViewController {
     
         print("Entering recovery mode")
         let alert = NSAlert.init()
-        let test = try? runAndPrint("/bin/sh", "/Applications/CheckNonceGUI.app/Contents/Resources/rec.sh")
+        let fileURL = Bundle.main.url(forResource:"rec", withExtension: "sh")
+        let filePath = fileURL?.relativePath
+        let test = try? runAndPrint("/bin/sh", "\(filePath!)")
         if test != nil {
             print("Worked")
             alert.messageText = "irecovery"
@@ -333,11 +326,12 @@ class ViewController: NSViewController {
         
         let alert = NSAlert.init()
         alert.messageText = "IMPORTANT"
-        alert.informativeText = "Please make sure you are in DFU mode before pressing continue, that the .app is installed to\n'/Applications' and that you are using a compatible device.\n\nipwndfu will loop until it puts the device in PWNDFU mode so just keep trying whenever the device reboots."
+        alert.informativeText = "Please make sure you are in DFU mode before pressing continue and that you are using a compatible device.\n\nipwndfu will loop until it puts the device in PWNDFU mode so just keep trying whenever the device reboots."
         alert.addButton(withTitle: "Continue")
         alert.runModal()
-        
-        let test = try? runAndPrint("/bin/sh", "/Applications/CheckNonceGUI.app/Contents/Resources/pwn.sh")
+        let fileURL = Bundle.main.url(forResource:"pwn", withExtension: "sh")
+        let filePath = fileURL?.relativePath
+        let test = try? runAndPrint("/bin/sh", "\(filePath!)")
         if test != nil {
             print("Worked")
             alert.messageText = "ipwndfu"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /Applications/CheckNonceGUI.app/Contents/Resources/
+cd "$(dirname "$0")"
 
 if [ -z "$1" ]
 then
@@ -91,55 +91,6 @@ fi
 if [ $? == 0 ]; then
    echo "Supported Device"
    device="iPhone10,6"
-   echo $device
-fi
-./igetnonce | grep 'd21ap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,2"
-   echo $device
-fi
-./igetnonce | grep 'd21aap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,2"
-   echo $device
-fi
-./igetnonce | grep 'd211ap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,5"
-   echo $device
-fi
-./igetnonce | grep 'd211aap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,5"
-   echo $device
-fi
-
-./igetnonce | grep 'd20ap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,1"
-   echo $device
-fi
-./igetnonce | grep 'd20aap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,1"
-   echo $device
-fi
-./igetnonce | grep 'd201ap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,4"
-   echo $device
-fi
-./igetnonce | grep 'd201aap' &> /dev/null
-if [ $? == 0 ]; then
-   echo "Supported Device"
-   device="iPhone10,4"
    echo $device
 fi
 

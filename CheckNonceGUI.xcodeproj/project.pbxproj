@@ -212,8 +212,6 @@
 		48FD0B3F236CF1EA00BFAFFE /* ibss.iPad4,4.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6B236CF1E900BFAFFE /* ibss.iPad4,4.img4 */; };
 		48FD0B40236CF1EA00BFAFFE /* ibec.iPad4,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6C236CF1E900BFAFFE /* ibec.iPad4,1.img4 */; };
 		48FD0B41236CF1EA00BFAFFE /* ibss.iPad4,8.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6D236CF1E900BFAFFE /* ibss.iPad4,8.img4 */; };
-		48FD0B42236CF1EA00BFAFFE /* ibss.iPhone10,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6E236CF1E900BFAFFE /* ibss.iPhone10,1.img4 */; };
-		48FD0B43236CF1EA00BFAFFE /* ibss.iPhone10,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A6F236CF1E900BFAFFE /* ibss.iPhone10,2.img4 */; };
 		48FD0B44236CF1EA00BFAFFE /* irecovery in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A70236CF1E900BFAFFE /* irecovery */; };
 		48FD0B45236CF1EA00BFAFFE /* ibss.iPad4,7.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A71236CF1E900BFAFFE /* ibss.iPad4,7.img4 */; };
 		48FD0B46236CF1EA00BFAFFE /* ibec.iPad4,2.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A72236CF1E900BFAFFE /* ibec.iPad4,2.img4 */; };
@@ -227,10 +225,8 @@
 		48FD0B4E236CF1EA00BFAFFE /* ibss.iPad7,11.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7A236CF1E900BFAFFE /* ibss.iPad7,11.img4 */; };
 		48FD0B4F236CF1EA00BFAFFE /* ibss.iPad4,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7B236CF1E900BFAFFE /* ibss.iPad4,1.img4 */; };
 		48FD0B50236CF1EA00BFAFFE /* ibec.iPad4,4.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7C236CF1E900BFAFFE /* ibec.iPad4,4.img4 */; };
-		48FD0B51236CF1EA00BFAFFE /* ibss.iPhone10,4.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7D236CF1E900BFAFFE /* ibss.iPhone10,4.img4 */; };
 		48FD0B52236CF1EA00BFAFFE /* ibec.iPad4,8.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7E236CF1E900BFAFFE /* ibec.iPad4,8.img4 */; };
 		48FD0B53236CF1EA00BFAFFE /* ibec.iPad4,9.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A7F236CF1E900BFAFFE /* ibec.iPad4,9.img4 */; };
-		48FD0B54236CF1EA00BFAFFE /* ibss.iPhone10,5.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A80236CF1E900BFAFFE /* ibss.iPhone10,5.img4 */; };
 		48FD0B55236CF1EA00BFAFFE /* ibss.iPad7,5.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A81236CF1E900BFAFFE /* ibss.iPad7,5.img4 */; };
 		48FD0B56236CF1EA00BFAFFE /* ibec.iPad4,5.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A82236CF1E900BFAFFE /* ibec.iPad4,5.img4 */; };
 		48FD0B57236CF1EA00BFAFFE /* ibss.iPhone9,1.img4 in Resources */ = {isa = PBXBuildFile; fileRef = 48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */; };
@@ -450,8 +446,6 @@
 		48FD0A6B236CF1E900BFAFFE /* ibss.iPad4,4.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,4.img4"; sourceTree = "<group>"; };
 		48FD0A6C236CF1E900BFAFFE /* ibec.iPad4,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,1.img4"; sourceTree = "<group>"; };
 		48FD0A6D236CF1E900BFAFFE /* ibss.iPad4,8.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,8.img4"; sourceTree = "<group>"; };
-		48FD0A6E236CF1E900BFAFFE /* ibss.iPhone10,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,1.img4"; sourceTree = "<group>"; };
-		48FD0A6F236CF1E900BFAFFE /* ibss.iPhone10,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,2.img4"; sourceTree = "<group>"; };
 		48FD0A70236CF1E900BFAFFE /* irecovery */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = irecovery; sourceTree = "<group>"; };
 		48FD0A71236CF1E900BFAFFE /* ibss.iPad4,7.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,7.img4"; sourceTree = "<group>"; };
 		48FD0A72236CF1E900BFAFFE /* ibec.iPad4,2.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,2.img4"; sourceTree = "<group>"; };
@@ -465,10 +459,8 @@
 		48FD0A7A236CF1E900BFAFFE /* ibss.iPad7,11.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad7,11.img4"; sourceTree = "<group>"; };
 		48FD0A7B236CF1E900BFAFFE /* ibss.iPad4,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad4,1.img4"; sourceTree = "<group>"; };
 		48FD0A7C236CF1E900BFAFFE /* ibec.iPad4,4.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,4.img4"; sourceTree = "<group>"; };
-		48FD0A7D236CF1E900BFAFFE /* ibss.iPhone10,4.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,4.img4"; sourceTree = "<group>"; };
 		48FD0A7E236CF1E900BFAFFE /* ibec.iPad4,8.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,8.img4"; sourceTree = "<group>"; };
 		48FD0A7F236CF1E900BFAFFE /* ibec.iPad4,9.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,9.img4"; sourceTree = "<group>"; };
-		48FD0A80236CF1E900BFAFFE /* ibss.iPhone10,5.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone10,5.img4"; sourceTree = "<group>"; };
 		48FD0A81236CF1E900BFAFFE /* ibss.iPad7,5.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPad7,5.img4"; sourceTree = "<group>"; };
 		48FD0A82236CF1E900BFAFFE /* ibec.iPad4,5.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibec.iPad4,5.img4"; sourceTree = "<group>"; };
 		48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibss.iPhone9,1.img4"; sourceTree = "<group>"; };
@@ -858,8 +850,6 @@
 				48FD0A6B236CF1E900BFAFFE /* ibss.iPad4,4.img4 */,
 				48FD0A6C236CF1E900BFAFFE /* ibec.iPad4,1.img4 */,
 				48FD0A6D236CF1E900BFAFFE /* ibss.iPad4,8.img4 */,
-				48FD0A6E236CF1E900BFAFFE /* ibss.iPhone10,1.img4 */,
-				48FD0A6F236CF1E900BFAFFE /* ibss.iPhone10,2.img4 */,
 				48FD0A70236CF1E900BFAFFE /* irecovery */,
 				48FD0A71236CF1E900BFAFFE /* ibss.iPad4,7.img4 */,
 				48FD0A72236CF1E900BFAFFE /* ibec.iPad4,2.img4 */,
@@ -873,10 +863,8 @@
 				48FD0A7A236CF1E900BFAFFE /* ibss.iPad7,11.img4 */,
 				48FD0A7B236CF1E900BFAFFE /* ibss.iPad4,1.img4 */,
 				48FD0A7C236CF1E900BFAFFE /* ibec.iPad4,4.img4 */,
-				48FD0A7D236CF1E900BFAFFE /* ibss.iPhone10,4.img4 */,
 				48FD0A7E236CF1E900BFAFFE /* ibec.iPad4,8.img4 */,
 				48FD0A7F236CF1E900BFAFFE /* ibec.iPad4,9.img4 */,
-				48FD0A80236CF1E900BFAFFE /* ibss.iPhone10,5.img4 */,
 				48FD0A81236CF1E900BFAFFE /* ibss.iPad7,5.img4 */,
 				48FD0A82236CF1E900BFAFFE /* ibec.iPad4,5.img4 */,
 				48FD0A83236CF1E900BFAFFE /* ibss.iPhone9,1.img4 */,
@@ -960,7 +948,6 @@
 				48F65AB2236D4480008BF2D7 /* _debug.py in Resources */,
 				48F65A31236D4480008BF2D7 /* S5L8920-firmware in Resources */,
 				48F65A49236D4480008BF2D7 /* ACKNOWLEDGEMENTS in Resources */,
-				48FD0B43236CF1EA00BFAFFE /* ibss.iPhone10,2.img4 in Resources */,
 				48F65A11236D4480008BF2D7 /* LICENSE in Resources */,
 				48F65A8C236D4480008BF2D7 /* libusb-1.0.22.sierra.bottle.tar.gz in Resources */,
 				48FD0B56236CF1EA00BFAFFE /* ibec.iPad4,5.img4 in Resources */,
@@ -1060,7 +1047,6 @@
 				48F65A5F236D4480008BF2D7 /* SHAtter.py in Resources */,
 				48F65A25236D4480008BF2D7 /* __init__.py in Resources */,
 				48F65A13236D4480008BF2D7 /* device_platform.py in Resources */,
-				48FD0B51236CF1EA00BFAFFE /* ibss.iPhone10,4.img4 in Resources */,
 				48F65A45236D4480008BF2D7 /* libloader.pyc in Resources */,
 				48F65A12236D4480008BF2D7 /* recovery.pyc in Resources */,
 				48FD0B39236CF1EA00BFAFFE /* ibss.iPad4,9.img4 in Resources */,
@@ -1122,7 +1108,6 @@
 				48FD0B4E236CF1EA00BFAFFE /* ibss.iPad7,11.img4 in Resources */,
 				48F65A35236D4480008BF2D7 /* README.md in Resources */,
 				48F65A97236D4480008BF2D7 /* S5L8920-firmware in Resources */,
-				48FD0B42236CF1EA00BFAFFE /* ibss.iPhone10,1.img4 in Resources */,
 				48F65A40236D4480008BF2D7 /* __init__.py in Resources */,
 				48F65ABC236D4481008BF2D7 /* .gitignore in Resources */,
 				48F65AA9236D4480008BF2D7 /* libusb1.py in Resources */,
@@ -1171,7 +1156,6 @@
 				48F65A37236D4480008BF2D7 /* legacy.py in Resources */,
 				48F65ABB236D4481008BF2D7 /* limera1n.pyc in Resources */,
 				48F65AC5236D4481008BF2D7 /* SHAtter.py in Resources */,
-				48FD0B54236CF1EA00BFAFFE /* ibss.iPhone10,5.img4 in Resources */,
 				48F65A3A236D4480008BF2D7 /* util.py in Resources */,
 				48F65ABD236D4481008BF2D7 /* image3_24Kpwn.pyc in Resources */,
 				48F65A0F236D4480008BF2D7 /* ipwnrecovery in Resources */,
@@ -1400,7 +1384,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.6.0;
+				MARKETING_VERSION = 0.6.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1447,7 +1431,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.6.0;
+				MARKETING_VERSION = 0.6.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
