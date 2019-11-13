@@ -80,6 +80,76 @@ if [ $? == 0 ]; then
    echo $device
 fi
 
+./igetnonce | grep 'n112ap' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPod9,1"
+   echo $device
+fi
+
+./igetnonce | grep 'j171ap' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad7,11"
+   echo $device
+fi
+
+./igetnonce | grep 'j17ap' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad7,12"
+   echo $device
+fi
+
+./igetnonce | grep 'j71bap' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad7,5"
+   echo $device
+fi
+
+./igetnonce | grep 'j72bap' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad7,6"
+   echo $device
+fi
+
+./igetnonce | grep 'j73ap' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad4,3"
+   echo $device
+fi
+
+./igetnonce | grep 'j87ap' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad4,6"
+   echo $device
+fi
+
+./igetnonce | grep 'j85map' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad4,7"
+   echo $device
+fi
+
+./igetnonce | grep 'j86map' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad4,8"
+   echo $device
+fi
+
+./igetnonce | grep 'j87map' &> /dev/null
+if [ $? == 0 ]; then
+   echo "Supported Device"
+   device="iPad4,9"
+   echo $device
+fi
+
 if [ -z "$device" ]
 then
     echo "Either unsupported device or no device found."

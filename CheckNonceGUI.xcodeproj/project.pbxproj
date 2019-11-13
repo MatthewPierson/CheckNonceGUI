@@ -1384,7 +1384,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.6.5;
+				MARKETING_VERSION = 0.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1431,7 +1431,7 @@
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu/libusbfinder",
 					"$(PROJECT_DIR)/CheckNonceGUI/ipwndfu_public/libusbfinder",
 				);
-				MARKETING_VERSION = 0.6.5;
+				MARKETING_VERSION = 0.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matty.CheckNonceGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
